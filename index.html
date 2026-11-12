@@ -18,7 +18,7 @@ h3{font-size:1rem;margin:2px 0}.preco{font-size:1.5rem;font-weight:800;color:var
 .btn{margin-top:auto;text-align:center;background:var(--yel);color:var(--navy);font-weight:800;padding:10px;border-radius:12px;text-decoration:none}
 footer{text-align:center;font-size:.8rem;opacity:.8;padding:24px 16px 40px;max-width:760px;margin:auto}footer a{color:var(--yel)}</style></head>
 <body><header><small>eFe Informática | Radar de Ofertas</small><h1>Ofertas <b>selecionadas</b></h1>
-<small>114 ofertas ativas · atualizado em 12/11/2026 20:30</small></header>
+<small>114 ofertas ativas · atualizado em 12/11/2026 20:43</small></header>
 <div class="busca"><input id="q" type="search" placeholder="Buscar produto, marca ou código (ex.: JBL, A17, #E7K2)" aria-label="Buscar ofertas"></div>
 <nav class="filtros" id="fl"><span class="rot">Loja</span><button class="on" data-l="*">Todas as lojas</button><button data-l="Amazon">Amazon</button><button data-l="Mercado Livre">Mercado Livre</button><button data-l="Shopee">Shopee</button></nav>
 <nav class="filtros" id="fc"><span class="rot">Categoria</span><button class="on" data-f="*">Todas</button><button data-f="Acessórios de celular">Acessórios de celular</button><button data-f="Celular">Celular</button><button data-f="Eletrônicos">Eletrônicos</button><button data-f="Ferramentas">Ferramentas</button><button data-f="Informática">Informática</button></nav>
@@ -828,4 +828,5 @@ Preços, estoque e condições podem mudar a qualquer momento — confira tudo n
 function ap(){const t=q.value.trim().toLowerCase().replace('#','');let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=(F=='*'||c.dataset.cat==F)&&(L=='*'||c.dataset.loja==L)&&(!t||c.dataset.busca.replace(/#/g,'').includes(t));c.style.display=ok?'':'none';if(ok)n++});document.getElementById('vazio').style.display=n?'none':'block'}
 document.querySelectorAll('#fc button').forEach(b=>b.onclick=()=>{F=b.dataset.f;document.querySelectorAll('#fc button').forEach(x=>x.classList.toggle('on',x===b));ap()});
 document.querySelectorAll('#fl button').forEach(b=>b.onclick=()=>{L=b.dataset.l;document.querySelectorAll('#fl button').forEach(x=>x.classList.toggle('on',x===b));ap()});
-q.oninput=ap;const h=decodeURIComponent(location.hash.slice(1));if(h){q.value=h;ap()}</script></body></html>
+q.oninput=ap;const h=decodeURIComponent(location.hash.slice(1));if(h){q.value=h;ap()}</script>
+<script async src="https://sistema.efesystem.com.br/radar/t.js"></script></body></html>
