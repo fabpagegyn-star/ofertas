@@ -1,6 +1,6 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Radar de Ofertas eFe Informática</title>
-<meta name="description" content="Ofertas selecionadas pela eFe Informática no Mercado Livre, Shopee e Amazon.">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Radar de Ofertas eFe Informática | Black Friday</title>
+<meta name="description" content="Ofertas selecionadas pela eFe Informática no Mercado Livre, Shopee e Amazon, com conferência de preço para a Black Friday.">
 <style>:root{--navy:#071234;--blue:#0d2a7a;--yel:#ffdd00;--txt:#fff}*{box-sizing:border-box}
 body{margin:0;font-family:Poppins,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(160deg,#0d2a7a,#071234 60%);color:var(--txt);min-height:100vh}
 header{text-align:center;padding:32px 16px 8px}header small{opacity:.85}h1{margin:.2em 0;font-size:2.2rem}h1 b{color:var(--yel)}
@@ -10,761 +10,776 @@ header{text-align:center;padding:32px 16px 8px}header small{opacity:.85}h1{margi
 .busca{display:flex;justify-content:center;padding:4px 16px 0}.busca input{width:100%;max-width:560px;border:0;border-radius:99px;padding:12px 18px;font:inherit;font-size:1rem}
 .rot{width:100%;text-align:center;font-size:.75rem;opacity:.75;margin-bottom:-4px}#vazio{display:none;text-align:center;opacity:.8;padding:24px}
 main{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;padding:16px;max-width:1200px;margin:auto}
-.card{background:#ffffff10;border:1px solid #ffffff22;border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card{background:#ffffff10;border:1px solid #ffffff22;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;position:relative}
 .card img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;max-height:340px}
 .info{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}.tag{font-size:.75rem;color:var(--yel)}.cod{align-self:flex-start;border:2px solid var(--yel);color:var(--yel);border-radius:99px;padding:2px 10px;font-weight:800;font-size:.85rem}
 h3{font-size:1rem;margin:2px 0}.preco{font-size:1.5rem;font-weight:800;color:var(--yel);margin:0}.preco small{font-size:.8rem;color:#fff;font-weight:400}
 .de{margin:0;font-size:.85rem;opacity:.85}.off{color:#5bff9a}.vend,.data{font-size:.78rem;opacity:.8;margin:0}
 .btn{margin-top:auto;text-align:center;background:var(--yel);color:var(--navy);font-weight:800;padding:10px;border-radius:12px;text-decoration:none}
-footer{text-align:center;font-size:.8rem;opacity:.8;padding:24px 16px 40px;max-width:760px;margin:auto}footer a{color:var(--yel)}</style></head>
-<body><header><small>eFe Informática | Radar de Ofertas</small><h1>Ofertas <b>selecionadas</b></h1>
-<small>107 ofertas ativas · atualizado em 16/11/2026 13:30</small></header>
+.selo{align-self:flex-start;background:#0b8f4d;color:#fff;border-radius:8px;padding:4px 9px;font-weight:800;font-size:.8rem;line-height:1.25}
+.selo small{display:block;font-weight:500;font-size:.68rem;opacity:.9}
+.card.tem-selo{border-color:#39d98a;box-shadow:0 0 0 1px #39d98a55}
+.filtros button.fs{background:#0b8f4d;font-weight:700}.filtros button.fs.on{background:#39d98a;color:#04130b}
+.crit{max-width:760px;margin:6px auto 0;padding:0 16px;text-align:center;font-size:.8rem;opacity:.85}
+footer{text-align:center;font-size:.8rem;opacity:.8;padding:24px 16px 40px;max-width:760px;margin:auto}footer a{color:var(--yel)}
+body{background:radial-gradient(1200px 600px at 50% -10%,#3a3200 0,#0a0a0c 55%,#000 100%) fixed #000}
+:root{--navy:#0a0a0c}
+.bf{margin:0 auto 4px;max-width:760px;padding:18px 16px 6px;text-align:center}
+.bf .faixa{display:inline-block;background:var(--yel);color:#000;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:6px;font-size:.95rem;transform:rotate(-1.5deg)}
+.bf .cont{margin-top:12px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.bf .cont div{min-width:64px;background:#ffffff12;border:1px solid #ffdd0055;border-radius:10px;padding:6px 8px}
+.bf .cont b{display:block;font-size:1.5rem;color:var(--yel);font-variant-numeric:tabular-nums}.bf .cont span{font-size:.68rem;opacity:.8;text-transform:uppercase;letter-spacing:.06em}
+header{padding-top:10px}.card{background:#ffffff0d;border-color:#ffffff1f}
+.filtros button.on{color:#000}.btn{color:#000}</style></head>
+<body><div class="bf"><span class="faixa">Esquenta Black Friday</span><div class="cont" id="cont" data-dia="2026-11-27" hidden><div><b id="cd">0</b><span>dias</span></div><div><b id="ch">00</b><span>horas</span></div><div><b id="cm">00</b><span>min</span></div><div><b id="cs">00</b><span>seg</span></div></div></div><header><small>eFe Informática | Radar de Ofertas</small><h1>Ofertas de <b>Black Friday</b></h1>
+<small>107 ofertas ativas · atualizado em 16/11/2026 16:00</small></header>
 <div class="busca"><input id="q" type="search" placeholder="Buscar produto, marca ou código (ex.: JBL, A17, #E7K2)" aria-label="Buscar ofertas"></div>
+<p class="crit">O selo verde <b>“Menor preço”</b> só aparece quando o preço da oferta é o menor do período indicado no histórico de preços (comparador Zoom e registros do próprio Radar). Desconto anunciado sozinho não ganha selo.</p>
 <nav class="filtros" id="fl"><span class="rot">Loja</span><button class="on" data-l="*">Todas as lojas</button><button data-l="Amazon">Amazon</button><button data-l="Mercado Livre">Mercado Livre</button><button data-l="Shopee">Shopee</button></nav>
 <nav class="filtros" id="fc"><span class="rot">Categoria</span><button class="on" data-f="*">Todas</button><button data-f="Acessórios de celular">Acessórios de celular</button><button data-f="Celular">Celular</button><button data-f="Eletrônicos">Eletrônicos</button><button data-f="Ferramentas">Ferramentas</button><button data-f="Informática">Informática</button></nav>
-<main><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="plus do brasil cabo usb turbo tipo c para samsung galaxy s26 s25 s24 plus s23 fe s22 s21 s20 a16 a15 a22 a13 a14 a55 a53 a54 a06 a05s a20 a21 apple iphone 18 17 16 15 carplay android auto br samsung galaxy s26 8de8  [loja oficial]">
+<main><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="teclado mecânico gamer redragon k617rgb-og fizz sunrise lar pret cinz redragon gamer k617rgb-og 930c  [loja oficial]">
+ <img src="arts/2026111616-MLB4096584207.jpg" alt="Teclado Mecânico Gamer Redragon K617RGB-OG Fizz Sunrise Lar Pret Cinz" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_895933-MLA99460528494_112025-F.webp'">
+ <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #930C</span>
+ <h3>Teclado Mecânico Gamer Redragon K617RGB-OG Fizz Sunrise Lar Pret Cinz</h3><p class="de"><s>R$ 256,00</s> <b class="off">50% OFF</b></p>
+ <p class="preco">R$ 125,91 <small></small></p>
+ <p class="vend"> [Loja oficial] · ★ 4.9</p>
+ <p class="data">Conferido em 16/11/2026 16:00 · link de afiliado</p>
+ <a class="btn" href="https://meli.la/2kAzrWg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="ssd kingston sa400s37/960g kingston ssd sa400s37/960g 8302 amazon.com.br">
+ <img src="arts/2026111616-AMZ-B079XC5PVV.jpg" alt="SSD Kingston SA400S37/960G" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/81+9rUcRVTL._AC_SL1000_.jpg'">
+ <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #8302</span>
+ <h3>SSD Kingston SA400S37/960G</h3><p class="de"><s>R$ 1.900,69</s> <b class="off">55% OFF</b></p>
+ <p class="preco">R$ 859,95 <small></small></p>
+ <p class="vend">Amazon.com.br · ★ 4.8 (23,9 mil avaliações)</p>
+ <p class="data">Conferido em 16/11/2026 16:00 · link de afiliado</p>
+ <a class="btn" href="https://www.amazon.com.br/dp/B079XC5PVV?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="teclado gamer/ escritório com fio rgb led iluminado  com 68 teclados mecânicos teclado gamer/ escritório 2c96 vendido por jungle.shop">
+ <img src="arts/2026111616-SHP-21798030664.jpg" alt="Teclado Gamer/ Escritório Com Fio RGB LED Iluminado  Com 68 Teclados Mecânicos" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcmbtqmuebcx87'">
+ <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #2C96</span>
+ <h3>Teclado Gamer/ Escritório Com Fio RGB LED Iluminado  Com 68 Teclados Mecânicos</h3><p class="de"><s>R$ 300,00</s> <b class="off">70% OFF</b></p>
+ <p class="preco">R$ 89,88 <small></small></p>
+ <p class="vend">Vendido por JUNGLE.SHOP · ★ 4.8 (8mil+ vendas)</p>
+ <p class="data">Conferido em 16/11/2026 16:00 · link de afiliado</p>
+ <a class="btn" href="https://s.shopee.com.br/20wvd4wZ8h" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="plus do brasil cabo usb turbo tipo c para samsung galaxy s26 s25 s24 plus s23 fe s22 s21 s20 a16 a15 a22 a13 a14 a55 a53 a54 a06 a05s a20 a21 apple iphone 18 17 16 15 carplay android auto br samsung galaxy s26 8de8  [loja oficial]">
  <img src="arts/2026111613-MLB6844877950.jpg" alt="Plus do Brasil Cabo Usb Turbo Tipo C Para Samsung Galaxy S26 S25 S24 Plus S23 Fe S22 S21 S20 A16 A15 A22 A13 A14 A55 A53 A54 A06 A05s A20 A21 Apple iPhone 18 17 16 15 Carplay Android Auto BR" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_658550-MLA110156406920_042026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular</span><span class="cod">Oferta #8DE8</span>
  <h3>Plus do Brasil Cabo Usb Turbo Tipo C Para Samsung Galaxy S26 S25 S24 Plus S23 Fe S22 S21 S20 A16 A15 A22 A13 A14 A55 A53 A54 A06 A05s A20 A21 Apple iPhone 18 17 16 15 Carplay Android Auto BR</h3><p class="de"><s>R$ 49,99</s> <b class="off">61% OFF</b></p>
  <p class="preco">R$ 19,09 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 16/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1uqw5Hg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="motorola, carregador de parede turbo power 68w, cabo 1 metro, porta usb-c motorola power 68w, dd1c amazon.com.br">
+ <a class="btn" href="https://meli.la/1uqw5Hg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="motorola, carregador de parede turbo power 68w, cabo 1 metro, porta usb-c motorola power 68w, dd1c amazon.com.br">
  <img src="arts/2026111613-AMZ-B0B143GC89.jpg" alt="Motorola, Carregador de Parede Turbo Power 68W, Cabo 1 Metro, Porta USB-C" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/41TEavLec5L._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #DD1C</span>
  <h3>Motorola, Carregador de Parede Turbo Power 68W, Cabo 1 Metro, Porta USB-C</h3><p class="de"><s>R$ 337,00</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 169,09 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (576 avaliações)</p>
  <p class="data">Conferido em 16/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0B143GC89?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="carregador sem fio 5000/10000mah iphone carregador 5000/10000mah 2386 vendido por jx verde">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0B143GC89?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="carregador sem fio 5000/10000mah iphone carregador 5000/10000mah 2386 vendido por jx verde">
  <img src="arts/2026111613-SHP-18499853587.jpg" alt="Carregador Sem Fio 5000/10000mAh iPhone" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mavkx3k4v9n308'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #2386</span>
  <h3>Carregador Sem Fio 5000/10000mAh iPhone</h3><p class="de"><s>R$ 57,60</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 28,85 <small></small></p>
  <p class="vend">Vendido por JX VERDE · ★ 4.7 (50mil+ vendas)</p>
  <p class="data">Conferido em 16/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/qkyEvb5eE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="smartphone motorola moto g37 5g - 128gb 4gb ram + 8gb ram boost, camera 50mp com editor magico, bateria de 5200 mah e tela 6.7&quot; 120hz, nfc - grafite motorola moto g37 e81c  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/qkyEvb5eE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="smartphone motorola moto g37 5g - 128gb 4gb ram + 8gb ram boost, camera 50mp com editor magico, bateria de 5200 mah e tela 6.7&quot; 120hz, nfc - grafite motorola moto g37 e81c  [loja oficial]">
  <img src="arts/2026111612-MLB7664817182.jpg" alt="Smartphone Motorola Moto G37 5G - 128GB 4GB RAM + 8GB RAM Boost, Camera 50MP com editor magico, Bateria de 5200 mAh e tela 6.7&quot; 120Hz, NFC - Grafite" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_819932-MLA117147070969_092026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #E81C</span>
  <h3>Smartphone Motorola Moto G37 5G - 128GB 4GB RAM + 8GB RAM Boost, Camera 50MP com editor magico, Bateria de 5200 mAh e tela 6.7&quot; 120Hz, NFC - Grafite</h3><p class="de"><s>R$ 2.099</s> <b class="off">52% OFF</b></p>
  <p class="preco">R$ 989,00 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 16/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/19bJLQW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="smartphone motorola moto g77 5g - 256gb 8gb ram, câmera 108mp motorola moto g77 7ee2 amazon.com.br">
+ <a class="btn" href="https://meli.la/19bJLQW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="smartphone motorola moto g77 5g - 256gb 8gb ram, câmera 108mp motorola moto g77 7ee2 amazon.com.br">
  <img src="arts/2026111612-AMZ-B0GLS8QF4B.jpg" alt="Smartphone Motorola Moto G77 5G - 256GB 8GB RAM, câmera 108MP" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61VvteJGEVL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #7EE2</span>
  <h3>Smartphone Motorola Moto G77 5G - 256GB 8GB RAM, câmera 108MP</h3><p class="de"><s>R$ 2.999</s> <b class="off">47% OFF</b></p>
  <p class="preco">R$ 1.577 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (120 avaliações)</p>
  <p class="data">Conferido em 16/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GLS8QF4B?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="capa capinha anti impacto para todos samsung galaxy a17 a07 a56 a36 a26 a16 a06 a55 a35 a25 a15 a05 samsung galaxy a17 254e vendido por kasprime.store">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GLS8QF4B?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="capa capinha anti impacto para todos samsung galaxy a17 a07 a56 a36 a26 a16 a06 a55 a35 a25 a15 a05 samsung galaxy a17 254e vendido por kasprime.store">
  <img src="arts/2026111612-SHP-23093194218.jpg" alt="Capa Capinha Anti Impacto Para Todos Samsung Galaxy A17 A07 A56 A36 A26 A16 A06 A55 A35 A25 A15 A05" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyd1yzainbol3a'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #254E</span>
  <h3>Capa Capinha Anti Impacto Para Todos Samsung Galaxy A17 A07 A56 A36 A26 A16 A06 A55 A35 A25 A15 A05</h3><p class="de"><s>R$ 23,98</s> <b class="off">71% OFF</b></p>
  <p class="preco">R$ 6,98 <small></small></p>
  <p class="vend">Vendido por KASPRIME.STORE · ★ 4.7 (20mil+ vendas)</p>
  <p class="data">Conferido em 16/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/60T4OOmXrk" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="esmerilhadeira bosch gws 700, eixo 710w, cor m14, cor azul marinho bosch gws 700, 489e vendido por bosch [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/60T4OOmXrk" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="esmerilhadeira bosch gws 700, eixo 710w, cor m14, cor azul marinho bosch gws 700, 489e vendido por bosch [loja oficial]">
  <img src="arts/2026111608-MLB4489902938.jpg" alt="Esmerilhadeira Bosch Gws 700, eixo 710w, cor M14, cor azul marinho" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_694948-MLA99466125028_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #489E</span>
  <h3>Esmerilhadeira Bosch Gws 700, eixo 710w, cor M14, cor azul marinho</h3><p class="de"><s>R$ 420,09</s> <b class="off">38% OFF</b></p>
  <p class="preco">R$ 259,90 <small></small></p>
  <p class="vend">Vendido por BOSCH [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 16/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1rW6o7c" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="wap parafusadeira e furadeira de impacto wf 12k4.2 3/8&quot; 12v wap wf 12k4.2 a1a6 amazon.com.br">
+ <a class="btn" href="https://meli.la/1rW6o7c" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="wap parafusadeira e furadeira de impacto wf 12k4.2 3/8&quot; 12v wap wf 12k4.2 a1a6 amazon.com.br">
  <img src="arts/2026111608-AMZ-B0F2JMYPQ9.jpg" alt="WAP Parafusadeira e Furadeira de Impacto WF 12K4.2 3/8&quot; 12V" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71Bnm202WgL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #A1A6</span>
  <h3>WAP Parafusadeira e Furadeira de Impacto WF 12K4.2 3/8&quot; 12V</h3><p class="de"><s>R$ 449,90</s> <b class="off">69% OFF</b></p>
  <p class="preco">R$ 140,90 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (279 avaliações)</p>
  <p class="data">Conferido em 16/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0F2JMYPQ9?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="martelete rotativo furadeira martelo rompedor de impacto 1200w 12 peças com maleta martelete rotativo martelo r e2fe vendido por allmind [loja oficial]">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0F2JMYPQ9?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="martelete rotativo furadeira martelo rompedor de impacto 1200w 12 peças com maleta martelete rotativo martelo r e2fe vendido por allmind [loja oficial]">
  <img src="arts/2026111608-SHP-19899254546.jpg" alt="Martelete Rotativo Furadeira Martelo Rompedor de Impacto 1200w 12 peças com maleta" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820l6-mqgn3lhz02khb6'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #E2FE</span>
  <h3>Martelete Rotativo Furadeira Martelo Rompedor de Impacto 1200w 12 peças com maleta</h3><p class="de"><s>R$ 514,99</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 246,99 <small></small></p>
  <p class="vend">Vendido por Allmind [Loja oficial] · ★ 4.9 (10mil+ vendas)</p>
  <p class="data">Conferido em 16/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/6filBck0Vo" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="celular samsung galaxy s25 ultra 5g, 256gb, 12gb, câm. quád. cor titanium cinza samsung galaxy s25 2294  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/6filBck0Vo" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="celular samsung galaxy s25 ultra 5g, 256gb, 12gb, câm. quád. cor titanium cinza samsung galaxy s25 2294  [loja oficial]">
  <img src="arts/2026111521-MLB7059216946.jpg" alt="Celular Samsung Galaxy S25 Ultra 5g, 256gb, 12gb, Câm. Quád. Cor Titanium Cinza" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_988716-MLA107519519715_022026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #2294</span>
  <h3>Celular Samsung Galaxy S25 Ultra 5g, 256gb, 12gb, Câm. Quád. Cor Titanium Cinza</h3><p class="de"><s>R$ 10.499</s> <b class="off">53% OFF</b></p>
  <p class="preco">R$ 4.914 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 15/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1PX819B" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="celular samsung galaxy a57 5g 128gb, 8gb ram, câmera tripla de até 50mp ois samsung galaxy a57 8414 amazon.com.br">
+ <a class="btn" href="https://meli.la/1PX819B" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="celular samsung galaxy a57 5g 128gb, 8gb ram, câmera tripla de até 50mp ois samsung galaxy a57 8414 amazon.com.br">
  <img src="arts/2026111521-AMZ-B0GVT7QXF7.jpg" alt="Celular Samsung Galaxy A57 5G 128GB, 8GB RAM, Câmera Tripla de até 50MP OIS" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51VZg1VWMlL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #8414</span>
  <h3>Celular Samsung Galaxy A57 5G 128GB, 8GB RAM, Câmera Tripla de até 50MP OIS</h3><p class="de"><s>R$ 3.599</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 1.861,05 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (974 avaliações)</p>
  <p class="data">Conferido em 15/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GVT7QXF7?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="kit 5 película de vidro temperado 3d 9h para samsung a01 a11 a21 a21s a31 a41 a51 a71 a50 a40 a30 a1 samsung 3d b681 vendido por strong tools">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GVT7QXF7?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="kit 5 película de vidro temperado 3d 9h para samsung a01 a11 a21 a21s a31 a41 a51 a71 a50 a40 a30 a1 samsung 3d b681 vendido por strong tools">
  <img src="arts/2026111521-SHP-20678286349.jpg" alt="Kit 5 Película De Vidro Temperado 3D 9H Para Samsung A01 A11 A21 A21S A31 A41 A51 A71 A50 A40 A30 A1" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7qukw-lilv10tyccs028'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #B681</span>
  <h3>Kit 5 Película De Vidro Temperado 3D 9H Para Samsung A01 A11 A21 A21S A31 A41 A51 A71 A50 A40 A30 A1</h3><p class="de"><s>R$ 19,89</s> <b class="off">71% OFF</b></p>
  <p class="preco">R$ 6,98 <small></small></p>
  <p class="vend">Vendido por Strong Tools · ★ 4.9 (50mil+ vendas)</p>
  <p class="data">Conferido em 15/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/70LbaEijpu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="fone de ouvido bluetooth 5.4 soundcore p30i da anker, cancelamento de ruído adaptativo, graves poderosos, 45h de reprodução, estojo 2-em-1 com suporte para celular, ip54, fone sem fio tws, preto anker p30i 92da  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/70LbaEijpu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="fone de ouvido bluetooth 5.4 soundcore p30i da anker, cancelamento de ruído adaptativo, graves poderosos, 45h de reprodução, estojo 2-em-1 com suporte para celular, ip54, fone sem fio tws, preto anker p30i 92da  [loja oficial]">
  <img src="arts/2026111519-MLB5410636044.jpg" alt="Fone de Ouvido Bluetooth 5.4 soundcore P30i da Anker, Cancelamento de Ruído Adaptativo, Graves Poderosos, 45H de Reprodução, Estojo 2-em-1 com Suporte para Celular, IP54, Fone sem fio TWS, Preto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_760745-MLA95700724020_102025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos</span><span class="cod">Oferta #92DA</span>
  <h3>Fone de Ouvido Bluetooth 5.4 soundcore P30i da Anker, Cancelamento de Ruído Adaptativo, Graves Poderosos, 45H de Reprodução, Estojo 2-em-1 com Suporte para Celular, IP54, Fone sem fio TWS, Preto</h3><p class="de"><s>R$ 389,00</s> <b class="off">49% OFF</b></p>
  <p class="preco">R$ 196,00 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 15/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2vCdkJW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="jbl, fone de ouvido bluetooth over-ear, tune 530bt, sem fio, até 76 horas jbl tune 530bt, c8e7 amazon.com.br">
+ <a class="btn" href="https://meli.la/2vCdkJW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="jbl, fone de ouvido bluetooth over-ear, tune 530bt, sem fio, até 76 horas jbl tune 530bt, c8e7 amazon.com.br">
  <img src="arts/2026111519-AMZ-B0GM1LSHQF.jpg" alt="JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61cnqHlVvEL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #C8E7</span>
  <h3>JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas</h3><p class="de"><s>R$ 299,00</s> <b class="off">45% OFF</b></p>
  <p class="preco">R$ 163,80 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (749 avaliações)</p>
  <p class="data">Conferido em 15/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GM1LSHQF?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="air pro 4 tws fone de ouvido sem fio bluetooth 5.1mini fones esportivos para android / ios iphone air 5.1mini 3217 vendido por dafushop_brasil">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GM1LSHQF?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="air pro 4 tws fone de ouvido sem fio bluetooth 5.1mini fones esportivos para android / ios iphone air 5.1mini 3217 vendido por dafushop_brasil">
  <img src="arts/2026111519-SHP-22793090494.jpg" alt="Air Pro 4 Tws Fone De Ouvido Sem Fio Bluetooth 5.1Mini Fones Esportivos Para Android / Ios iphone" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwghsqx5css501'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #3217</span>
  <h3>Air Pro 4 Tws Fone De Ouvido Sem Fio Bluetooth 5.1Mini Fones Esportivos Para Android / Ios iphone</h3><p class="de"><s>R$ 59,99</s> <b class="off">65% OFF</b></p>
  <p class="preco">R$ 20,99 <small></small></p>
  <p class="vend">Vendido por DAFUSHOP_brasil · ★ 4.7 (10mil+ vendas)</p>
  <p class="data">Conferido em 15/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/4B1QD41vfR" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="furadeira de impacto bosch 450w 10mm gsb 450 re com jogo de brocas bits 300 peças bosch impacto 450w 10mm 1285 vendido por bosch [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/4B1QD41vfR" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="furadeira de impacto bosch 450w 10mm gsb 450 re com jogo de brocas bits 300 peças bosch impacto 450w 10mm 1285 vendido por bosch [loja oficial]">
  <img src="arts/2026111510-MLB5741517732.jpg" alt="Furadeira de Impacto Bosch 450W 10mm GSB 450 RE com Jogo de Brocas Bits 300 Peças" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_705500-MLA99899450981_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #1285</span>
  <h3>Furadeira de Impacto Bosch 450W 10mm GSB 450 RE com Jogo de Brocas Bits 300 Peças</h3><p class="de"><s>R$ 492,71</s> <b class="off">39% OFF</b></p>
  <p class="preco">R$ 299,90 <small></small></p>
  <p class="vend">Vendido por BOSCH [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 15/11/2026 10:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1D23q6h" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="philco parafusadeira ppf21m velocidade variável philco ppf21m 536c amazon.com.br">
+ <a class="btn" href="https://meli.la/1D23q6h" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="philco parafusadeira ppf21m velocidade variável philco ppf21m 536c amazon.com.br">
  <img src="arts/2026111510-AMZ-B0BHTNL2VT.jpg" alt="Philco Parafusadeira PPF21M Velocidade Variável" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61WjFPouNIL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #536C</span>
  <h3>Philco Parafusadeira PPF21M Velocidade Variável</h3><p class="de"><s>R$ 338,50</s> <b class="off">51% OFF</b></p>
  <p class="preco">R$ 165,86 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.4 (82 avaliações)</p>
  <p class="data">Conferido em 15/11/2026 10:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0BHTNL2VT?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="kit bits soquete canhão sextavado parafusadeira 5 a 13mm kit bits soquete canhã 8583 vendido por vazshop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0BHTNL2VT?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="kit bits soquete canhão sextavado parafusadeira 5 a 13mm kit bits soquete canhã 8583 vendido por vazshop">
  <img src="arts/2026111510-SHP-23693685708.jpg" alt="Kit Bits Soquete Canhão Sextavado Parafusadeira 5 A 13mm" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820lm-mnz4okv31fk19a'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #8583</span>
  <h3>Kit Bits Soquete Canhão Sextavado Parafusadeira 5 A 13mm</h3><p class="de"><s>R$ 29,99</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 11,96 <small></small></p>
  <p class="vend">Vendido por VazShop · ★ 4.9 (10mil+ vendas)</p>
  <p class="data">Conferido em 15/11/2026 10:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/7fbINRtnu3" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="mouse sem fio recarregável bluetooth wireless óptico ergonômico sem fio led rgb gamer para notebook pc tablet smartphone preto nixzen mouse recarregável bluet 0601  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/7fbINRtnu3" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="mouse sem fio recarregável bluetooth wireless óptico ergonômico sem fio led rgb gamer para notebook pc tablet smartphone preto nixzen mouse recarregável bluet 0601  [loja oficial]">
  <img src="arts/2026111422-MLB4688075949.jpg" alt="Mouse Sem Fio Recarregável Bluetooth Wireless Óptico Ergonômico Sem Fio Led Rgb Gamer Para Notebook Pc Tablet Smartphone Preto Nixzen" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_740877-MLA111838789216_062026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #0601</span>
  <h3>Mouse Sem Fio Recarregável Bluetooth Wireless Óptico Ergonômico Sem Fio Led Rgb Gamer Para Notebook Pc Tablet Smartphone Preto Nixzen</h3><p class="de"><s>R$ 49,90</s> <b class="off">56% OFF</b></p>
  <p class="preco">R$ 21,90 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 14/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/18KTTzZ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="headset gamer havit h2232d, rgb, com microfone, falante de 50mm headset havit h2232d, ad62 amazon.com.br">
+ <a class="btn" href="https://meli.la/18KTTzZ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="headset gamer havit h2232d, rgb, com microfone, falante de 50mm headset havit h2232d, ad62 amazon.com.br">
  <img src="arts/2026111422-AMZ-B07N78G8GB.jpg" alt="Headset Gamer Havit H2232d, RGB, com Microfone, Falante de 50mm" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71+giACAGrL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #AD62</span>
  <h3>Headset Gamer Havit H2232d, RGB, com Microfone, Falante de 50mm</h3><p class="de"><s>R$ 169,00</s> <b class="off">56% OFF</b></p>
  <p class="preco">R$ 74,95 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (9,9 mil avaliações)</p>
  <p class="data">Conferido em 14/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B07N78G8GB?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="samsung ssd t5 hd externo 2tb/4tb/8tb/16tb solid state hard drive portable suitable for desktop samsung ssd t5 2544 vendido por hooso.br">
+ <a class="btn" href="https://www.amazon.com.br/dp/B07N78G8GB?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="samsung ssd t5 hd externo 2tb/4tb/8tb/16tb solid state hard drive portable suitable for desktop samsung ssd t5 2544 vendido por hooso.br">
  <img src="arts/2026111422-SHP-45318077139.jpg" alt="SAMSUNG SSD T5 Hd Externo 2TB/4TB/8TB/16TB Solid State Hard Drive Portable Suitable for Desktop" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/cn-11134207-820l4-mtvvepghs35ub7'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #2544</span>
  <h3>SAMSUNG SSD T5 Hd Externo 2TB/4TB/8TB/16TB Solid State Hard Drive Portable Suitable for Desktop</h3><p class="de"><s>R$ 599,00</s> <b class="off">71% OFF</b></p>
  <p class="preco">R$ 174,00 <small></small></p>
  <p class="vend">Vendido por HooSo.br · ★ 4.7 (855 vendas)</p>
  <p class="data">Conferido em 14/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/W87qJcMKC" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="celular samsung galaxy a37 5g 128gb, 6gb ram, câmera 50mp samsung galaxy a37 1ade  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/W87qJcMKC" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="celular samsung galaxy a37 5g 128gb, 6gb ram, câmera 50mp samsung galaxy a37 1ade  [loja oficial]">
  <img src="arts/2026111420-MLB4615263561.jpg" alt="Celular Samsung Galaxy A37 5G 128GB, 6GB RAM, Câmera 50MP" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_957431-MLA113151371921_062026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #1ADE</span>
  <h3>Celular Samsung Galaxy A37 5G 128GB, 6GB RAM, Câmera 50MP</h3><p class="de"><s>R$ 3.499</s> <b class="off">56% OFF</b></p>
  <p class="preco">R$ 1.531 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 14/11/2026 20:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2kzM9hu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="celular samsung galaxy s26+ 5g, 512gb, 12gb ram, câmera tripla de 50+12+10 samsung galaxy s26+ 0cfa amazon.com.br">
+ <a class="btn" href="https://meli.la/2kzM9hu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="celular samsung galaxy s26+ 5g, 512gb, 12gb ram, câmera tripla de 50+12+10 samsung galaxy s26+ 0cfa amazon.com.br">
  <img src="arts/2026111420-AMZ-B0GKR1T5Q1.jpg" alt="Celular Samsung Galaxy S26+ 5G, 512GB, 12GB RAM, Câmera Tripla de 50+12+10" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61-dHkiB0gL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #0CFA</span>
  <h3>Celular Samsung Galaxy S26+ 5G, 512GB, 12GB RAM, Câmera Tripla de 50+12+10</h3><p class="de"><s>R$ 10.799</s> <b class="off">49% OFF</b></p>
  <p class="preco">R$ 5.486,99 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (45 avaliações)</p>
  <p class="data">Conferido em 14/11/2026 20:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GKR1T5Q1?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="adaptador usb tipo c para 3.0 otg compatível com macbook pro samsung galaxy type-smartphones , table samsung adaptador usb tipo d7e8 vendido por ming.store">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GKR1T5Q1?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="adaptador usb tipo c para 3.0 otg compatível com macbook pro samsung galaxy type-smartphones , table samsung adaptador usb tipo d7e8 vendido por ming.store">
  <img src="arts/2026111420-SHP-19098022680.jpg" alt="Adaptador USB Tipo C Para 3.0 OTG Compatível Com MacBook Pro Samsung Galaxy Type-Smartphones , Table" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rbni-m5stlibzq36f2f'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #D7E8</span>
  <h3>Adaptador USB Tipo C Para 3.0 OTG Compatível Com MacBook Pro Samsung Galaxy Type-Smartphones , Table</h3><p class="de"><s>R$ 66,00</s> <b class="off">90% OFF</b></p>
  <p class="preco">R$ 6,66 <small></small></p>
  <p class="vend">Vendido por Ming.store · ★ 4.7 (10mil+ vendas)</p>
  <p class="data">Conferido em 14/11/2026 20:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/6q2BNvjNAr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="cabo tipo c anker turbo carregador e dados. reforçado para samsung galaxy s24, s23 e iphone 17/16/15, xiaomi. carregamento rápido samsung galaxy s24, 39c5  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/6q2BNvjNAr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="cabo tipo c anker turbo carregador e dados. reforçado para samsung galaxy s24, s23 e iphone 17/16/15, xiaomi. carregamento rápido samsung galaxy s24, 39c5  [loja oficial]">
  <img src="arts/2026111415-MLB4215195537.jpg" alt="Cabo Tipo C Anker Turbo Carregador e Dados. Reforçado para Samsung Galaxy S24, S23 e iPhone 17/16/15, Xiaomi. Carregamento Rápido" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_975304-MLA99466134442_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular</span><span class="cod">Oferta #39C5</span>
  <h3>Cabo Tipo C Anker Turbo Carregador e Dados. Reforçado para Samsung Galaxy S24, S23 e iPhone 17/16/15, Xiaomi. Carregamento Rápido</h3><p class="de"><s>R$ 149,00</s> <b class="off">62% OFF</b></p>
  <p class="preco">R$ 56,00 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 14/11/2026 15:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2pBeRLP" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="cabo usb-c em nylon 1,5 m euac 15nb branco intelbras cabo euac 15nb cd01 amazon.com.br">
+ <a class="btn" href="https://meli.la/2pBeRLP" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="cabo usb-c em nylon 1,5 m euac 15nb branco intelbras cabo euac 15nb cd01 amazon.com.br">
  <img src="arts/2026111415-AMZ-B08HM6TLXM.jpg" alt="Cabo USB-C em nylon 1,5 m EUAC 15NB Branco Intelbras" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51psiydEG3L._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #CD01</span>
  <h3>Cabo USB-C em nylon 1,5 m EUAC 15NB Branco Intelbras</h3><p class="de"><s>R$ 39,90</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 20,91 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (7 mil avaliações)</p>
  <p class="data">Conferido em 14/11/2026 15:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B08HM6TLXM?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="kit 2 em 1 power bank portátil   pack magsafe + cabo de iphone rápido 20w usb-c para lightning 1m kit 2 em 1 power bank c9c8 vendido por toptoki">
+ <a class="btn" href="https://www.amazon.com.br/dp/B08HM6TLXM?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="kit 2 em 1 power bank portátil   pack magsafe + cabo de iphone rápido 20w usb-c para lightning 1m kit 2 em 1 power bank c9c8 vendido por toptoki">
  <img src="arts/2026111415-SHP-58203288339.jpg" alt="Kit 2 em 1 Power Bank Portátil   Pack MagSafe + Cabo de iphone Rápido 20W USB-C para Lightning 1m" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134211-820lc-mucv7fk5r7k28f'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #C9C8</span>
  <h3>Kit 2 em 1 Power Bank Portátil   Pack MagSafe + Cabo de iphone Rápido 20W USB-C para Lightning 1m</h3><p class="de"><s>R$ 109,92</s> <b class="off">56% OFF</b></p>
  <p class="preco">R$ 48,89 <small></small></p>
  <p class="vend">Vendido por TopToki · ★ 4.7 (6mil+ vendas)</p>
  <p class="data">Conferido em 14/11/2026 15:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/114OREaSJF" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="caixa de som lg xboom go xg9s bluetooth 5.3, 50w, som potente, led personalizável, party mode, resistente à água ipx7, bateria longa duração e design compacto caixa go xg9s 582c  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/114OREaSJF" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="caixa de som lg xboom go xg9s bluetooth 5.3, 50w, som potente, led personalizável, party mode, resistente à água ipx7, bateria longa duração e design compacto caixa go xg9s 582c  [loja oficial]">
  <img src="arts/2026111411-MLB6288871126.jpg" alt="Caixa de Som LG XBOOM GO XG9S Bluetooth 5.3, 50W, Som Potente, LED Personalizável, Party Mode, Resistente à Água IPX7, Bateria Longa Duração e Design Compacto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_922049-MLA107760535162_032026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos</span><span class="cod">Oferta #582C</span>
  <h3>Caixa de Som LG XBOOM GO XG9S Bluetooth 5.3, 50W, Som Potente, LED Personalizável, Party Mode, Resistente à Água IPX7, Bateria Longa Duração e Design Compacto</h3><p class="de"><s>R$ 1.749</s> <b class="off">49% OFF</b></p>
  <p class="preco">R$ 883,50 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 14/11/2026 11:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1BW5WeQ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="soundcore p20i da anker, fone de ouvido bluetooth 5.3 sem fio, 2 mics ia anker p20i 48f4 amazon.com.br">
+ <a class="btn" href="https://meli.la/1BW5WeQ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="soundcore p20i da anker, fone de ouvido bluetooth 5.3 sem fio, 2 mics ia anker p20i 48f4 amazon.com.br">
  <img src="arts/2026111411-AMZ-B0BTYCRJSS.jpg" alt="soundcore P20i da Anker, Fone de Ouvido Bluetooth 5.3 Sem Fio, 2 Mics IA" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51Ze-SzYKFL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #48F4</span>
  <h3>soundcore P20i da Anker, Fone de Ouvido Bluetooth 5.3 Sem Fio, 2 Mics IA</h3><p class="de"><s>R$ 249,00</s> <b class="off">47% OFF</b></p>
  <p class="preco">R$ 131,10 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (117,8 mil avaliações)</p>
  <p class="data">Conferido em 14/11/2026 11:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0BTYCRJSS?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="fone pro sem fio som hifi 8d pop-up automático toque inteligente bateria 5–7h bluetooth universal fone hifi 8d c53d vendido por achados&amp;pedidos">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0BTYCRJSS?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="fone pro sem fio som hifi 8d pop-up automático toque inteligente bateria 5–7h bluetooth universal fone hifi 8d c53d vendido por achados&amp;pedidos">
  <img src="arts/2026111411-SHP-58255641529.jpg" alt="Fone Pro Sem Fio Som HiFi 8D Pop-Up Automático Toque Inteligente Bateria 5–7h Bluetooth Universal" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-8261z-ml25b72c1ds21d'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #C53D</span>
  <h3>Fone Pro Sem Fio Som HiFi 8D Pop-Up Automático Toque Inteligente Bateria 5–7h Bluetooth Universal</h3><p class="de"><s>R$ 69,00</s> <b class="off">67% OFF</b></p>
  <p class="preco">R$ 22,99 <small></small></p>
  <p class="vend">Vendido por Achados&amp;Pedidos · ★ 4.8 (30mil+ vendas)</p>
  <p class="data">Conferido em 14/11/2026 11:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/4LKqPN1IKU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="furadeira de impacto einhell profissional madeira metal 550w furadeira impacto einhell pr cbaa vendido por einhell [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/4LKqPN1IKU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="furadeira de impacto einhell profissional madeira metal 550w furadeira impacto einhell pr cbaa vendido por einhell [loja oficial]">
  <img src="arts/2026111409-MLB5806511608.jpg" alt="Furadeira De Impacto Einhell Profissional Madeira Metal 550w" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_939087-MLB94798622808_102025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #CBAA</span>
  <h3>Furadeira De Impacto Einhell Profissional Madeira Metal 550w</h3><p class="de"><s>R$ 174,90</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 89,90 <small></small></p>
  <p class="vend">Vendido por EINHELL [Loja oficial] · ★ 5.0</p>
  <p class="data">Conferido em 14/11/2026 09:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1A43NwY" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="jogo de ferramentas com 163 peças vonder vonder jogo ferramentas 1 b489 amazon.com.br">
+ <a class="btn" href="https://meli.la/1A43NwY" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="jogo de ferramentas com 163 peças vonder vonder jogo ferramentas 1 b489 amazon.com.br">
  <img src="arts/2026111409-AMZ-B0C9TZPX5J.jpg" alt="Jogo De Ferramentas Com 163 Peças Vonder" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/81NzamswRGL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #B489</span>
  <h3>Jogo De Ferramentas Com 163 Peças Vonder</h3><p class="de"><s>R$ 617,38</s> <b class="off">56% OFF</b></p>
  <p class="preco">R$ 269,90 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.9 (409 avaliações)</p>
  <p class="data">Conferido em 14/11/2026 09:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0C9TZPX5J?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="adaptador de corte para parafusadeira furadeira cortar chapa calhas metal alumínio conector com aces adaptador corte cortar chapa c6e0 vendido por trevoria shop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0C9TZPX5J?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="adaptador de corte para parafusadeira furadeira cortar chapa calhas metal alumínio conector com aces adaptador corte cortar chapa c6e0 vendido por trevoria shop">
  <img src="arts/2026111409-SHP-23298672313.jpg" alt="Adaptador De Corte Para Parafusadeira Furadeira Cortar Chapa Calhas Metal Alumínio Conector Com Aces" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbfclp4ecfdu60'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #C6E0</span>
  <h3>Adaptador De Corte Para Parafusadeira Furadeira Cortar Chapa Calhas Metal Alumínio Conector Com Aces</h3><p class="de"><s>R$ 79,00</s> <b class="off">64% OFF</b></p>
  <p class="preco">R$ 28,80 <small></small></p>
  <p class="vend">Vendido por TREVORIA SHOP · ★ 4.8 (10mil+ vendas)</p>
  <p class="data">Conferido em 14/11/2026 09:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/7KyRypv4Zx" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="fone headset gamer pro h2 preto fortrek fone pro h2 1ba5  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/7KyRypv4Zx" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="fone headset gamer pro h2 preto fortrek fone pro h2 1ba5  [loja oficial]">
  <img src="arts/2026111322-MLB5229085155.jpg" alt="Fone Headset Gamer Pro H2 Preto Fortrek" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_911126-MLA106302961552_022026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #1BA5</span>
  <h3>Fone Headset Gamer Pro H2 Preto Fortrek</h3><p class="de"><s>R$ 299,00</s> <b class="off">68% OFF</b></p>
  <p class="preco">R$ 94,11 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.7</p>
  <p class="data">Conferido em 13/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1sR9uGW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="mouse gamer sem fio redragon invader pro híbrido 2.4ghz cabo paracord usb-c mouse híbrido 2.4ghz 8a47 amazon.com.br">
+ <a class="btn" href="https://meli.la/1sR9uGW" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="mouse gamer sem fio redragon invader pro híbrido 2.4ghz cabo paracord usb-c mouse híbrido 2.4ghz 8a47 amazon.com.br">
  <img src="arts/2026111322-AMZ-B0C7KBJ6CM.jpg" alt="Mouse Gamer Sem Fio Redragon Invader Pro Híbrido 2.4GHz Cabo Paracord USB-C" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51mF52jRqtL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #8A47</span>
  <h3>Mouse Gamer Sem Fio Redragon Invader Pro Híbrido 2.4GHz Cabo Paracord USB-C</h3><p class="de"><s>R$ 185,00</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 73,27 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (168 avaliações)</p>
  <p class="data">Conferido em 13/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0C7KBJ6CM?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="teclado mecanico tgt sherman v3 c1, rainbow, abnt2, switch vermelho, preto, tgt-shrc-rd01 teclado sherman v3 9901 vendido por pichau [loja oficial]">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0C7KBJ6CM?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="teclado mecanico tgt sherman v3 c1, rainbow, abnt2, switch vermelho, preto, tgt-shrc-rd01 teclado sherman v3 9901 vendido por pichau [loja oficial]">
  <img src="arts/2026111322-SHP-22194360521.jpg" alt="Teclado Mecanico TGT Sherman V3 C1, Rainbow, ABNT2, Switch Vermelho, Preto, TGT-SHRC-RD01" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820ls-mqeqor4mxm2o65'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #9901</span>
  <h3>Teclado Mecanico TGT Sherman V3 C1, Rainbow, ABNT2, Switch Vermelho, Preto, TGT-SHRC-RD01</h3><p class="de"><s>R$ 377,98</s> <b class="off">76% OFF</b></p>
  <p class="preco">R$ 91,91 <small></small></p>
  <p class="vend">Vendido por Pichau [Loja oficial] · ★ 4.9 (5mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/Lohe12uWP" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="smartphone samsung galaxy a36 5g 128gb 6gb ram câmera tripla de até 50mp selfie de 12mp ip67 super amoled 6.7&#x27;&#x27; nfc recursos ai android e segurança snapdragon - preto samsung galaxy a36 725a  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/Lohe12uWP" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="smartphone samsung galaxy a36 5g 128gb 6gb ram câmera tripla de até 50mp selfie de 12mp ip67 super amoled 6.7&#x27;&#x27; nfc recursos ai android e segurança snapdragon - preto samsung galaxy a36 725a  [loja oficial]">
  <img src="arts/2026111320-MLB7651815658.jpg" alt="Smartphone Samsung Galaxy A36 5g 128gb 6gb Ram Câmera Tripla De Até 50mp Selfie De 12mp Ip67 Super Amoled 6.7&#x27;&#x27; Nfc Recursos Ai Android E Segurança Snapdragon - Preto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_944288-MLA116511342948_092026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #725A</span>
  <h3>Smartphone Samsung Galaxy A36 5g 128gb 6gb Ram Câmera Tripla De Até 50mp Selfie De 12mp Ip67 Super Amoled 6.7&#x27;&#x27; Nfc Recursos Ai Android E Segurança Snapdragon - Preto</h3><p class="de"><s>R$ 2.538,57</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 1.319 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 13/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1YBE5PE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="smartphone motorola edge 70 5g crystals by swarovski - 512gb 12gb ram motorola 5g 3ce8 amazon.com.br">
+ <a class="btn" href="https://meli.la/1YBE5PE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="smartphone motorola edge 70 5g crystals by swarovski - 512gb 12gb ram motorola 5g 3ce8 amazon.com.br">
  <img src="arts/2026111320-AMZ-B0GMY41LM8.jpg" alt="Smartphone Motorola Edge 70 5G Crystals by Swarovski - 512GB 12GB RAM" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61LyzNkloEL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #3CE8</span>
  <h3>Smartphone Motorola Edge 70 5G Crystals by Swarovski - 512GB 12GB RAM</h3><p class="de"><s>R$ 5.999</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 3.099 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (204 avaliações)</p>
  <p class="data">Conferido em 13/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GMY41LM8?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="celular smartphone xiaomi poco c71 128gb / 64gb dual sim global xiaomi poco c71 8dc0 vendido por verix shop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GMY41LM8?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="celular smartphone xiaomi poco c71 128gb / 64gb dual sim global xiaomi poco c71 8dc0 vendido por verix shop">
  <img src="arts/2026111320-SHP-58208171189.jpg" alt="Celular Smartphone Xiaomi Poco C71 128GB / 64GB Dual Sim Global" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820m0-mmqs1m8ud79de8'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #8DC0</span>
  <h3>Celular Smartphone Xiaomi Poco C71 128GB / 64GB Dual Sim Global</h3><p class="de"><s>R$ 1.300</s> <b class="off">61% OFF</b></p>
  <p class="preco">R$ 781,99 <small></small></p>
  <p class="vend">Vendido por VERIX SHOP · ★ 4.9 (1mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/8KqzAgvfs5" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="fone de ouvido soundcore by anker p20i graves poderosos e impactantes bluetooth 5.3 30h de reprodução resistência à água 2 mics ia para chamadas claras personalização de som via app cor preto anker by p20i 416e  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/8KqzAgvfs5" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="fone de ouvido soundcore by anker p20i graves poderosos e impactantes bluetooth 5.3 30h de reprodução resistência à água 2 mics ia para chamadas claras personalização de som via app cor preto anker by p20i 416e  [loja oficial]">
  <img src="arts/2026111319-MLB5410852112.jpg" alt="Fone De Ouvido Soundcore by Anker P20i Graves Poderosos e Impactantes Bluetooth 5.3 30H de Reprodução Resistência à Água 2 Mics IA para Chamadas Claras Personalização de Som via App Cor Preto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_730568-MLA99983575997_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos</span><span class="cod">Oferta #416E</span>
  <h3>Fone De Ouvido Soundcore by Anker P20i Graves Poderosos e Impactantes Bluetooth 5.3 30H de Reprodução Resistência à Água 2 Mics IA para Chamadas Claras Personalização de Som via App Cor Preto</h3><p class="de"><s>R$ 299,00</s> <b class="off">53% OFF</b></p>
  <p class="preco">R$ 138,00 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 13/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2NJys3y" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="soundcore p30i da anker, anc fone de ouvido bluetooth 5.4 sem fio, tws anker p30i 4c69 amazon.com.br">
+ <a class="btn" href="https://meli.la/2NJys3y" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="soundcore p30i da anker, anc fone de ouvido bluetooth 5.4 sem fio, tws anker p30i 4c69 amazon.com.br">
  <img src="arts/2026111319-AMZ-B0CRTYZG5C.jpg" alt="soundcore P30i da Anker, ANC Fone de Ouvido Bluetooth 5.4 Sem Fio, TWS" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51sd+DRfpXL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #4C69</span>
  <h3>soundcore P30i da Anker, ANC Fone de Ouvido Bluetooth 5.4 Sem Fio, TWS</h3><p class="de"><s>R$ 369,00</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 184,24 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (45,6 mil avaliações)</p>
  <p class="data">Conferido em 13/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0CRTYZG5C?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="fone de ouvido entrada lightning para iphone microfone bluetooth fone entrada lightning aafb vendido por zsz_shop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0CRTYZG5C?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="fone de ouvido entrada lightning para iphone microfone bluetooth fone entrada lightning aafb vendido por zsz_shop">
  <img src="arts/2026111319-SHP-22892686035.jpg" alt="Fone de Ouvido entrada lightning para Iphone Microfone Bluetooth" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rbkc-lpcgfnwj651k1e'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #AAFB</span>
  <h3>Fone de Ouvido entrada lightning para Iphone Microfone Bluetooth</h3><p class="de"><s>R$ 30,00</s> <b class="off">70% OFF</b></p>
  <p class="preco">R$ 8,99 <small></small></p>
  <p class="vend">Vendido por ZSZ_SHOP · ★ 4.7 (80mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/1BrFP4BCN" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="headset gamer pro x 2 lightspeed sem fio preto logitech g logitech headset gamer pro 8b21  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/1BrFP4BCN" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="headset gamer pro x 2 lightspeed sem fio preto logitech g logitech headset gamer pro 8b21  [loja oficial]">
  <img src="arts/2026111316-MLB4443416334.jpg" alt="Headset Gamer Pro X 2 Lightspeed Sem Fio Preto Logitech G" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_962051-MLU73341892974_122023-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #8B21</span>
  <h3>Headset Gamer Pro X 2 Lightspeed Sem Fio Preto Logitech G</h3><p class="de"><s>R$ 1.699,90</s> <b class="off">37% OFF</b></p>
  <p class="preco">R$ 1.061 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 13/11/2026 16:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2rgL8km" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="headset gamer redragon zeus lite preto p3 h510-lt headset preto p3 b4de amazon.com.br">
+ <a class="btn" href="https://meli.la/2rgL8km" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="headset gamer redragon zeus lite preto p3 h510-lt headset preto p3 b4de amazon.com.br">
  <img src="arts/2026111316-AMZ-B0F1C3MRMF.jpg" alt="Headset Gamer Redragon Zeus Lite Preto P3 H510-LT" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61pvhJpLRRL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #B4DE</span>
  <h3>Headset Gamer Redragon Zeus Lite Preto P3 H510-LT</h3><p class="de"><s>R$ 249,90</s> <b class="off">44% OFF</b></p>
  <p class="preco">R$ 139,99 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (2 mil avaliações)</p>
  <p class="data">Conferido em 13/11/2026 16:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0F1C3MRMF?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="teclado mecanico gamer tgt sherman compacto, rainbow, abnt2, switch azul, preto, tgt-shtkl-rbw01 teclado abnt2, ffd3 vendido por pichau [loja oficial]">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0F1C3MRMF?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="teclado mecanico gamer tgt sherman compacto, rainbow, abnt2, switch azul, preto, tgt-shtkl-rbw01 teclado abnt2, ffd3 vendido por pichau [loja oficial]">
  <img src="arts/2026111316-SHP-22997611303.jpg" alt="Teclado Mecanico Gamer TGT Sherman Compacto, Rainbow, ABNT2, Switch Azul, Preto, TGT-SHTKL-RBW01" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mb84nf9v9xu73e'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #FFD3</span>
  <h3>Teclado Mecanico Gamer TGT Sherman Compacto, Rainbow, ABNT2, Switch Azul, Preto, TGT-SHTKL-RBW01</h3><p class="de"><s>R$ 219,99</s> <b class="off">58% OFF</b></p>
  <p class="preco">R$ 92,90 <small></small></p>
  <p class="vend">Vendido por Pichau [Loja oficial] · ★ 4.9 (10mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 16:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/BVHRi3XrO" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="carregador super rápido 25w para samsung galaxy s24 s23 s22 s21 s20 fe ultra motorola m22 m31 m32 m62 m63 m64 g15 xiaomi redmi note 12 13 14 15 lg - super fast cabo blindado tipo usb c fast plug samsung galaxy s24 26b5  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/BVHRi3XrO" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="carregador super rápido 25w para samsung galaxy s24 s23 s22 s21 s20 fe ultra motorola m22 m31 m32 m62 m63 m64 g15 xiaomi redmi note 12 13 14 15 lg - super fast cabo blindado tipo usb c fast plug samsung galaxy s24 26b5  [loja oficial]">
  <img src="arts/2026111313-MLB7853262704.jpg" alt="Carregador Super Rápido 25w Para Samsung Galaxy S24 S23 S22 S21 S20 Fe Ultra Motorola M22 M31 M32 M62 M63 M64 G15 Xiaomi Redmi Note 12 13 14 15 LG - Super Fast Cabo Blindado Tipo Usb C Fast Plug" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_767887-MLA120087704221_102026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular</span><span class="cod">Oferta #26B5</span>
  <h3>Carregador Super Rápido 25w Para Samsung Galaxy S24 S23 S22 S21 S20 Fe Ultra Motorola M22 M31 M32 M62 M63 M64 G15 Xiaomi Redmi Note 12 13 14 15 LG - Super Fast Cabo Blindado Tipo Usb C Fast Plug</h3><p class="de"><s>R$ 69,99</s> <b class="off">64% OFF</b></p>
  <p class="preco">R$ 24,99 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.6</p>
  <p class="data">Conferido em 13/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/26STK4V" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="cabo de 2 metros de nylon baseus turbo tipo c para tipo c 60w 3a preto baseus 3a 3c75 amazon.com.br">
+ <a class="btn" href="https://meli.la/26STK4V" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="cabo de 2 metros de nylon baseus turbo tipo c para tipo c 60w 3a preto baseus 3a 3c75 amazon.com.br">
  <img src="arts/2026111313-AMZ-B09NY2QJHZ.jpg" alt="Cabo de 2 metros de Nylon BASEUS Turbo tipo C para tipo C 60W 3A Preto" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71-aUWZCLML._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #3C75</span>
  <h3>Cabo de 2 metros de Nylon BASEUS Turbo tipo C para tipo C 60W 3A Preto</h3><p class="de"><s>R$ 69,99</s> <b class="off">51% OFF</b></p>
  <p class="preco">R$ 34,09 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.9 (501 avaliações)</p>
  <p class="data">Conferido em 13/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B09NY2QJHZ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="carregador turbo 35w iphone usb c original fonte pd carregador iphone 15 16 carregamento rápido carregador 35w iphone usb c o 1440 vendido por  lucky store">
+ <a class="btn" href="https://www.amazon.com.br/dp/B09NY2QJHZ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="carregador turbo 35w iphone usb c original fonte pd carregador iphone 15 16 carregamento rápido carregador 35w iphone usb c o 1440 vendido por  lucky store">
  <img src="arts/2026111313-SHP-23494302256.jpg" alt="Carregador Turbo 35W iPhone USB C Original Fonte PD Carregador iPhone 15 16 Carregamento rápido" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rdye-md5axbdrawmv6a'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #1440</span>
  <h3>Carregador Turbo 35W iPhone USB C Original Fonte PD Carregador iPhone 15 16 Carregamento rápido</h3><p class="de"><s>R$ 31,96</s> <b class="off">57% OFF</b></p>
  <p class="preco">R$ 15,98 <small></small></p>
  <p class="vend">Vendido por  LUCKY STORE · ★ 4.9 (7mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/AKc3YMo3oX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="smartphone motorola moto g17 4g - 128gb 4gb ram + 8gb ram boost, camera 50mp sony lytia 600, tela fhd+ 60hz, bateria 5200 mah - azul motorola moto g17 e82a  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/AKc3YMo3oX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="smartphone motorola moto g17 4g - 128gb 4gb ram + 8gb ram boost, camera 50mp sony lytia 600, tela fhd+ 60hz, bateria 5200 mah - azul motorola moto g17 e82a  [loja oficial]">
  <img src="arts/2026111312-MLB6420215012.jpg" alt="Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_773592-MLA105493148200_012026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #E82A</span>
  <h3>Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul</h3><p class="de"><s>R$ 1.599</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 798,30 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 13/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2kVzZXf" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="celular samsung galaxy a37 5g 128gb, 6gb ram, câmera 50mp (preto) samsung galaxy a37 3d52 amazon.com.br">
+ <a class="btn" href="https://meli.la/2kVzZXf" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="celular samsung galaxy a37 5g 128gb, 6gb ram, câmera 50mp (preto) samsung galaxy a37 3d52 amazon.com.br">
  <img src="arts/2026111312-AMZ-B0GVT89H5W.jpg" alt="Celular Samsung Galaxy A37 5G 128GB, 6GB RAM, Câmera 50MP (Preto)" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/515VjUyFG6L._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #3D52</span>
  <h3>Celular Samsung Galaxy A37 5G 128GB, 6GB RAM, Câmera 50MP (Preto)</h3><p class="de"><s>R$ 3.299</s> <b class="off">54% OFF</b></p>
  <p class="preco">R$ 1.531,81 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (214 avaliações)</p>
  <p class="data">Conferido em 13/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GVT89H5W?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="ponta caneta s pen touch para samsung s6 s7 s8 s9 s10 s23 s24 s25 book tablet celular reposição samsung s6 f0ba vendido por diversic ">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GVT89H5W?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="ponta caneta s pen touch para samsung s6 s7 s8 s9 s10 s23 s24 s25 book tablet celular reposição samsung s6 f0ba vendido por diversic ">
  <img src="arts/2026111312-SHP-52854050765.jpg" alt="Ponta Caneta S Pen Touch para Samsung S6 S7 S8 S9 S10 S23 S24 S25 Book Tablet Celular Reposição" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-81zuf-mj01chcsvuh306'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #F0BA</span>
  <h3>Ponta Caneta S Pen Touch para Samsung S6 S7 S8 S9 S10 S23 S24 S25 Book Tablet Celular Reposição</h3><p class="de"><s>R$ 31,50</s> <b class="off">53% OFF</b></p>
  <p class="preco">R$ 14,93 <small></small></p>
  <p class="vend">Vendido por DIVERSIC  · ★ 4.9 (10mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/8AXYyNwJD4" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="parafusadeira e furadeira de impacto a bateria 18v bosch gsb 183-li maleta com kit brocas e bits profissional 103 peças bosch gsb 183-li ae85 vendido por bosch [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/8AXYyNwJD4" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="parafusadeira e furadeira de impacto a bateria 18v bosch gsb 183-li maleta com kit brocas e bits profissional 103 peças bosch gsb 183-li ae85 vendido por bosch [loja oficial]">
  <img src="arts/2026111308-MLB4223852991.jpg" alt="Parafusadeira E Furadeira De Impacto A Bateria 18v Bosch Gsb 183-li Maleta Com Kit Brocas E Bits Profissional 103 Peças" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_626334-MLA99457573836_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #AE85</span>
  <h3>Parafusadeira E Furadeira De Impacto A Bateria 18v Bosch Gsb 183-li Maleta Com Kit Brocas E Bits Profissional 103 Peças</h3><p class="de"><s>R$ 1.799</s> <b class="off">54% OFF</b></p>
  <p class="preco">R$ 809,91 <small></small></p>
  <p class="vend">Vendido por BOSCH [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 13/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1sUA1Ln" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="vonder, parafusadeira/furadeira a bateria pfv 120, 12v, bivolt, 650 rpm, amarelo, com maleta e acessórios vonder pfv 120, 3cb3 amazon.com.br">
+ <a class="btn" href="https://meli.la/1sUA1Ln" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="vonder, parafusadeira/furadeira a bateria pfv 120, 12v, bivolt, 650 rpm, amarelo, com maleta e acessórios vonder pfv 120, 3cb3 amazon.com.br">
  <img src="arts/2026111308-AMZ-B09TB998J3.jpg" alt="Vonder, Parafusadeira/Furadeira a Bateria PFV 120, 12V, Bivolt, 650 RPM, Amarelo, com Maleta e Acessórios" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71Q29FYJMSL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #3CB3</span>
  <h3>Vonder, Parafusadeira/Furadeira a Bateria PFV 120, 12V, Bivolt, 650 RPM, Amarelo, com Maleta e Acessórios</h3><p class="de"><s>R$ 268,34</s> <b class="off">58% OFF</b></p>
  <p class="preco">R$ 113,05 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (2,8 mil avaliações)</p>
  <p class="data">Conferido em 13/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B09TB998J3?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="kit parafusadeira doméstica com maleta leve portátil usb recarregável-yumi kit doméstica maleta l f10d vendido por yumi cell">
+ <a class="btn" href="https://www.amazon.com.br/dp/B09TB998J3?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="kit parafusadeira doméstica com maleta leve portátil usb recarregável-yumi kit doméstica maleta l f10d vendido por yumi cell">
  <img src="arts/2026111308-SHP-23193562548.jpg" alt="Kit Parafusadeira Doméstica com maleta Leve Portátil USB Recarregável-YUMI" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rfig-m3ar41583ul96c'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #F10D</span>
  <h3>Kit Parafusadeira Doméstica com maleta Leve Portátil USB Recarregável-YUMI</h3><p class="de"><s>R$ 120,00</s> <b class="off">68% OFF</b></p>
  <p class="preco">R$ 37,99 <small></small></p>
  <p class="vend">Vendido por YUMI CELL · ★ 4.8 (50mil+ vendas)</p>
  <p class="data">Conferido em 13/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/7VHsB8uREy" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="teclado mecânico redragon dark avenger tkl switch brown abnt2 com luz rainbow teclado brown abnt2 7ebd  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/7VHsB8uREy" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="teclado mecânico redragon dark avenger tkl switch brown abnt2 com luz rainbow teclado brown abnt2 7ebd  [loja oficial]">
  <img src="arts/2026111222-MLB5626994328.jpg" alt="Teclado Mecânico Redragon Dark Avenger TKL Switch Brown ABNT2 com Luz Rainbow" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_795694-MLA99918818561_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #7EBD</span>
  <h3>Teclado Mecânico Redragon Dark Avenger TKL Switch Brown ABNT2 com Luz Rainbow</h3><p class="de"><s>R$ 213,00</s> <b class="off">39% OFF</b></p>
  <p class="preco">R$ 129,05 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 12/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2HqqbsE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="jbl quantum 360 wireless, headset gamer, over ear, microfone removível jbl quantum 360 wirele 40e5 amazon.com.br">
+ <a class="btn" href="https://meli.la/2HqqbsE" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="jbl quantum 360 wireless, headset gamer, over ear, microfone removível jbl quantum 360 wirele 40e5 amazon.com.br">
  <img src="arts/2026111222-AMZ-B0D8QJRBV3.jpg" alt="JBL Quantum 360 Wireless, Headset Gamer, Over Ear, Microfone Removível" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/619S-amD2VL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #40E5</span>
  <h3>JBL Quantum 360 Wireless, Headset Gamer, Over Ear, Microfone Removível</h3><p class="de"><s>R$ 699,00</s> <b class="off">52% OFF</b></p>
  <p class="preco">R$ 337,24 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (804 avaliações)</p>
  <p class="data">Conferido em 12/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0D8QJRBV3?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="kit teclado e mouse sem fio bluetooth colorido macaron para pc ipad tablet notebook kit bluetooth colorido 0211 vendido por nosso tesouro">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0D8QJRBV3?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="kit teclado e mouse sem fio bluetooth colorido macaron para pc ipad tablet notebook kit bluetooth colorido 0211 vendido por nosso tesouro">
  <img src="arts/2026111222-SHP-21899576987.jpg" alt="Kit Teclado e Mouse Sem Fio Bluetooth Colorido Macaron Para PC iPad Tablet Notebook" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-m4kg0bicwo5141'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #0211</span>
  <h3>Kit Teclado e Mouse Sem Fio Bluetooth Colorido Macaron Para PC iPad Tablet Notebook</h3><p class="de"><s>R$ 99,00</s> <b class="off">63% OFF</b></p>
  <p class="preco">R$ 36,59 <small></small></p>
  <p class="vend">Vendido por nosso tesouro · ★ 4.8 (10mil+ vendas)</p>
  <p class="data">Conferido em 12/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/Lohe0czfB" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="smartphone motorola moto g06 - 64gb 4gb ram + 8gb ram boost, camera 50mp com ai, bateria de 5200 mah e tela 6.9&quot; - bege motorola moto g06 e1ef  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/Lohe0czfB" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="smartphone motorola moto g06 - 64gb 4gb ram + 8gb ram boost, camera 50mp com ai, bateria de 5200 mah e tela 6.9&quot; - bege motorola moto g06 e1ef  [loja oficial]">
  <img src="arts/2026111220-MLB7706162248.jpg" alt="Smartphone Motorola Moto G06 - 64GB 4GB RAM + 8GB Ram Boost, Camera 50MP com AI, Bateria de 5200 mAh e Tela 6.9&quot; - Bege" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_605303-MLA116320601976_092026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular</span><span class="cod">Oferta #E1EF</span>
  <h3>Smartphone Motorola Moto G06 - 64GB 4GB RAM + 8GB Ram Boost, Camera 50MP com AI, Bateria de 5200 mAh e Tela 6.9&quot; - Bege</h3><p class="de"><s>R$ 1.299</s> <b class="off">51% OFF</b></p>
  <p class="preco">R$ 629,10 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 12/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1sN332b" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="celular samsung galaxy a36 5g 128gb, 6gb ram, câmera 50mp, ip67, super amoled 6.7&quot; samsung galaxy a36 eef6 amazon.com.br">
+ <a class="btn" href="https://meli.la/1sN332b" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="celular samsung galaxy a36 5g 128gb, 6gb ram, câmera 50mp, ip67, super amoled 6.7&quot; samsung galaxy a36 eef6 amazon.com.br">
  <img src="arts/2026111220-AMZ-B0DYVNRG3B.jpg" alt="Celular Samsung Galaxy A36 5G 128GB, 6GB RAM, Câmera 50MP, IP67, Super AMOLED 6.7&quot;" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/613Vrz+GcaL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #EEF6</span>
  <h3>Celular Samsung Galaxy A36 5G 128GB, 6GB RAM, Câmera 50MP, IP67, Super AMOLED 6.7&quot;</h3><p class="de"><s>R$ 2.699</s> <b class="off">54% OFF</b></p>
  <p class="preco">R$ 1.239,09 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (3 mil avaliações)</p>
  <p class="data">Conferido em 12/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DYVNRG3B?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="kit 5 película 3d vidro temperado compatível com todos samsung galaxy a56 a36 a26 a16 a06 a55 a35 a2 samsung 3d 2aac vendido por kasprime.store">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DYVNRG3B?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="kit 5 película 3d vidro temperado compatível com todos samsung galaxy a56 a36 a26 a16 a06 a55 a35 a2 samsung 3d 2aac vendido por kasprime.store">
  <img src="arts/2026111220-SHP-22997494699.jpg" alt="Kit 5 Película 3D Vidro Temperado Compatível Com Todos Samsung Galaxy A56 A36 A26 A16 A06 A55 A35 A2" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-lv9o8ige404p79'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #2AAC</span>
  <h3>Kit 5 Película 3D Vidro Temperado Compatível Com Todos Samsung Galaxy A56 A36 A26 A16 A06 A55 A35 A2</h3><p class="de"><s>R$ 31,98</s> <b class="off">69% OFF</b></p>
  <p class="preco">R$ 9,99 <small></small></p>
  <p class="vend">Vendido por KASPRIME.STORE · ★ 4.9 (40mil+ vendas)</p>
  <p class="data">Conferido em 12/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/7Af1mXi6Ux" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="lg xboom xg9s caixa de som bluetooth portátil - ip67 e 24 horas de bateria lg xboom xg9s 73c4  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/7Af1mXi6Ux" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="lg xboom xg9s caixa de som bluetooth portátil - ip67 e 24 horas de bateria lg xboom xg9s 73c4  [loja oficial]">
  <img src="arts/2026111219-MLB6549469046.jpg" alt="LG XBOOM XG9S Caixa de som Bluetooth portátil - IP67 e 24 horas de bateria" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_850547-MLA95560485257_102025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos</span><span class="cod">Oferta #73C4</span>
  <h3>LG XBOOM XG9S Caixa de som Bluetooth portátil - IP67 e 24 horas de bateria</h3><p class="de"><s>R$ 2.099</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 836,07 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 12/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2rxWQPr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="fone de ouvido sem fio jbl bluetooth wave buds 2, intra auricular jbl buds 2, b34b amazon.com.br">
+ <a class="btn" href="https://meli.la/2rxWQPr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="fone de ouvido sem fio jbl bluetooth wave buds 2, intra auricular jbl buds 2, b34b amazon.com.br">
  <img src="arts/2026111219-AMZ-B0DHL63KWK.jpg" alt="Fone de Ouvido Sem Fio JBL Bluetooth Wave Buds 2, Intra Auricular" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/414+kOLlS5L._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #B34B</span>
  <h3>Fone de Ouvido Sem Fio JBL Bluetooth Wave Buds 2, Intra Auricular</h3><p class="de"><s>R$ 466,66</s> <b class="off">55% OFF</b></p>
  <p class="preco">R$ 208,05 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (8,8 mil avaliações)</p>
  <p class="data">Conferido em 12/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DHL63KWK?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="k12 caixa de som sem fio com microfone karaokê, mini alto-falante bluetooth portátil 1/2 mic k12 microfone karaokê, 03c0 vendido por zsz_shop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DHL63KWK?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="k12 caixa de som sem fio com microfone karaokê, mini alto-falante bluetooth portátil 1/2 mic k12 microfone karaokê, 03c0 vendido por zsz_shop">
  <img src="arts/2026111219-SHP-23098440348.jpg" alt="K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rff1-m96a3707agyh54'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #03C0</span>
  <h3>K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic</h3><p class="de"><s>R$ 100,00</s> <b class="off">73% OFF</b></p>
  <p class="preco">R$ 27,49 <small></small></p>
  <p class="vend">Vendido por ZSZ_SHOP · ★ 4.8 (30mil+ vendas)</p>
  <p class="data">Conferido em 12/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/3LSJDX56MK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="carregador turbo 50w tipo c para samsung motorola xiaomi lg samsung 50w tipo c motorol b0cc  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/3LSJDX56MK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="carregador turbo 50w tipo c para samsung motorola xiaomi lg samsung 50w tipo c motorol b0cc  [loja oficial]">
  <img src="arts/2026111213-MLB4420166255.jpg" alt="Carregador Turbo 50w Tipo C Para Samsung Motorola Xiaomi LG" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_899699-MLB109631877216_042026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular</span><span class="cod">Oferta #B0CC</span>
  <h3>Carregador Turbo 50w Tipo C Para Samsung Motorola Xiaomi LG</h3><p class="de"><s>R$ 129,00</s> <b class="off">66% OFF</b></p>
  <p class="preco">R$ 43,86 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.7</p>
  <p class="data">Conferido em 12/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2PnXyXJ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="geonav power bank indução pb10magow 10000mah, compatível magsafe, off white geonav indução pb10magow eb81 amazon.com.br">
+ <a class="btn" href="https://meli.la/2PnXyXJ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="geonav power bank indução pb10magow 10000mah, compatível magsafe, off white geonav indução pb10magow eb81 amazon.com.br">
  <img src="arts/2026111213-AMZ-B0D3NDBHQ7.jpg" alt="Geonav Power Bank Indução PB10MAGOW 10000mAh, Compatível MagSafe, Off White" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61Q8VtyeTuL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #EB81</span>
  <h3>Geonav Power Bank Indução PB10MAGOW 10000mAh, Compatível MagSafe, Off White</h3><p class="de"><s>R$ 299,00</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 120,24 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.5 (4,7 mil avaliações)</p>
  <p class="data">Conferido em 12/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0D3NDBHQ7?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="carregador iphone turbo tipo-c 20w + cabo lightining para iphone carga rápida carregador iphone tipo-c 20w 71fa vendido por zsz_shop">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0D3NDBHQ7?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="carregador iphone turbo tipo-c 20w + cabo lightining para iphone carga rápida carregador iphone tipo-c 20w 71fa vendido por zsz_shop">
  <img src="arts/2026111213-SHP-22397182247.jpg" alt="Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rbkw-lpcg9rytbas79a'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #71FA</span>
  <h3>Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida</h3><p class="de"><s>R$ 50,00</s> <b class="off">70% OFF</b></p>
  <p class="preco">R$ 14,99 <small></small></p>
  <p class="vend">Vendido por ZSZ_SHOP · ★ 4.8 (60mil+ vendas)</p>
  <p class="data">Conferido em 12/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/80E8m4wwY3" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="parafusadeira furadeira c/ 2 baterias maleta kit completo led eixo flexível vários níveis torque simake parafusadeira c/ 2 baterias male 2490 vendido por simake [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/80E8m4wwY3" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="parafusadeira furadeira c/ 2 baterias maleta kit completo led eixo flexível vários níveis torque simake parafusadeira c/ 2 baterias male 2490 vendido por simake [loja oficial]">
  <img src="arts/2026111208-MLB4345564271.jpg" alt="Parafusadeira Furadeira C/ 2 Baterias Maleta Kit Completo Led Eixo Flexível Vários Níveis Torque Simake" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_835659-MLA116548375638_092026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #2490</span>
  <h3>Parafusadeira Furadeira C/ 2 Baterias Maleta Kit Completo Led Eixo Flexível Vários Níveis Torque Simake</h3><p class="de"><s>R$ 299,00</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 119,60 <small></small></p>
  <p class="vend">Vendido por SIMAKE [Loja oficial] · ★ 4.7</p>
  <p class="data">Conferido em 12/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/18PwdRr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="vonder, parafusadeira/furadeira com impacto a bateria pfv 238i, 20v, bivolt, 2 velocidades, 42 n.m, com maleta e acessórios vonder pfv 238i, b5bd amazon.com.br">
+ <a class="btn" href="https://meli.la/18PwdRr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="vonder, parafusadeira/furadeira com impacto a bateria pfv 238i, 20v, bivolt, 2 velocidades, 42 n.m, com maleta e acessórios vonder pfv 238i, b5bd amazon.com.br">
  <img src="arts/2026111208-AMZ-B0DLXVM1SZ.jpg" alt="Vonder, Parafusadeira/Furadeira com Impacto a Bateria PFV 238I, 20V, Bivolt, 2 Velocidades, 42 N.m, com Maleta e Acessórios" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71KgwGod0RL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #B5BD</span>
  <h3>Vonder, Parafusadeira/Furadeira com Impacto a Bateria PFV 238I, 20V, Bivolt, 2 Velocidades, 42 N.m, com Maleta e Acessórios</h3><p class="de"><s>R$ 543,78</s> <b class="off">62% OFF</b></p>
  <p class="preco">R$ 206,99 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (281 avaliações)</p>
  <p class="data">Conferido em 12/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DLXVM1SZ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="110v/220v furadeira parafusadeira de  850w 3000rpm com acessórios geele 110v/220v 3000rpm e20f vendido por geele tool">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DLXVM1SZ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="110v/220v furadeira parafusadeira de  850w 3000rpm com acessórios geele 110v/220v 3000rpm e20f vendido por geele tool">
  <img src="arts/2026111208-SHP-28228483057.jpg" alt="110V/220V Furadeira Parafusadeira De  850w 3000RPM Com Acessórios GEELE" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rasm-mas3xtsjpeub94'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #E20F</span>
  <h3>110V/220V Furadeira Parafusadeira De  850w 3000RPM Com Acessórios GEELE</h3><p class="de"><s>R$ 353,68</s> <b class="off">70% OFF</b></p>
  <p class="preco">R$ 105,99 <small></small></p>
  <p class="vend">Vendido por GEElE TOOL · ★ 4.8 (20mil+ vendas)</p>
  <p class="data">Conferido em 12/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/7puiZktAZ4" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="teclado mecânico gamer redragon k617rgb-og fizz sunrise lar pret cinz teclado k617rgb-og a7d0  [loja oficial]">
- <img src="arts/2026111122-MLB4096584207.jpg" alt="Teclado Mecânico Gamer Redragon K617RGB-OG Fizz Sunrise Lar Pret Cinz" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_895933-MLA99460528494_112025-F.webp'">
- <div class="info"><span class="tag">Mercado Livre · Informática</span><span class="cod">Oferta #A7D0</span>
- <h3>Teclado Mecânico Gamer Redragon K617RGB-OG Fizz Sunrise Lar Pret Cinz</h3><p class="de"><s>R$ 256,00</s> <b class="off">50% OFF</b></p>
- <p class="preco">R$ 125,91 <small></small></p>
- <p class="vend"> [Loja oficial] · ★ 4.9</p>
- <p class="data">Conferido em 11/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2kAzrWg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="ssd kingston sa400s37/960g kingston ssd sa400s37/960g 8cca amazon.com.br">
- <img src="arts/2026111122-AMZ-B079XC5PVV.jpg" alt="SSD Kingston SA400S37/960G" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/81+9rUcRVTL._AC_SL1000_.jpg'">
- <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #8CCA</span>
- <h3>SSD Kingston SA400S37/960G</h3><p class="de"><s>R$ 1.900,69</s> <b class="off">55% OFF</b></p>
- <p class="preco">R$ 859,95 <small></small></p>
- <p class="vend">Amazon.com.br · ★ 4.8 (23,9 mil avaliações)</p>
- <p class="data">Conferido em 11/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B079XC5PVV?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="teclado gamer/ escritório com fio rgb led iluminado  com 68 teclados mecânicos teclado gamer/ escritório 85aa vendido por jungle.shop">
- <img src="arts/2026111122-SHP-21798030664.jpg" alt="Teclado Gamer/ Escritório Com Fio RGB LED Iluminado  Com 68 Teclados Mecânicos" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcmbtqmuebcx87'">
- <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #85AA</span>
- <h3>Teclado Gamer/ Escritório Com Fio RGB LED Iluminado  Com 68 Teclados Mecânicos</h3><p class="de"><s>R$ 300,00</s> <b class="off">70% OFF</b></p>
- <p class="preco">R$ 89,88 <small></small></p>
- <p class="vend">Vendido por JUNGLE.SHOP · ★ 4.8 (8mil+ vendas)</p>
- <p class="data">Conferido em 11/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/20wvd4wZ8h" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="smartband huawei band 10 preta com tela amoled de 1.47&quot; smartband 1.47&quot; f654  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/7puiZktAZ4" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="smartband huawei band 10 preta com tela amoled de 1.47&quot; smartband 1.47&quot; f654  [loja oficial]">
  <img src="arts/2026111119-MLB4083441037.jpg" alt="Smartband Huawei Band 10 Preta com Tela AMOLED de 1.47&quot;" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_772291-MLA100008466405_122025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos</span><span class="cod">Oferta #F654</span>
  <h3>Smartband Huawei Band 10 Preta com Tela AMOLED de 1.47&quot;</h3><p class="de"><s>R$ 659,00</s> <b class="off">68% OFF</b></p>
  <p class="preco">R$ 208,55 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 11/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1gaSZfg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="relógio inteligente amazfit balance 46mm a2287, gps, composição corporal amazfit a2287, bb90 amazon.com.br">
+ <a class="btn" href="https://meli.la/1gaSZfg" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="relógio inteligente amazfit balance 46mm a2287, gps, composição corporal amazfit a2287, bb90 amazon.com.br">
  <img src="arts/2026111119-AMZ-B0D2NS6V8G.jpg" alt="Relógio Inteligente Amazfit Balance 46mm A2287, GPS, Composição Corporal" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/71VaJ-e3qNL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #BB90</span>
  <h3>Relógio Inteligente Amazfit Balance 46mm A2287, GPS, Composição Corporal</h3><p class="de"><s>R$ 1.899</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 761,67 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (171 avaliações)</p>
  <p class="data">Conferido em 11/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0D2NS6V8G?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="fone de ouvido sem fio com cancelamento de ruído bluetooth pop-up fone cancelamento ruído 368d vendido por jx verde">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0D2NS6V8G?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="fone de ouvido sem fio com cancelamento de ruído bluetooth pop-up fone cancelamento ruído 368d vendido por jx verde">
  <img src="arts/2026111119-SHP-19899586753.jpg" alt="Fone de Ouvido Sem Fio Com Cancelamento De Ruído Bluetooth Pop-Up" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-7rffm-m4f5wo6pi7mjaa'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #368D</span>
  <h3>Fone de Ouvido Sem Fio Com Cancelamento De Ruído Bluetooth Pop-Up</h3><p class="de"><s>R$ 199,00</s> <b class="off">78% OFF</b></p>
  <p class="preco">R$ 42,89 <small></small></p>
  <p class="vend">Vendido por JX VERDE · ★ 4.8 (100mil+ vendas)</p>
  <p class="data">Conferido em 11/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/4VeGbg0ezX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="cabo usb-c anker 240w (tipo c) pd 3.2/3.1 turbo carga super rápida trançado reciclado 0,9m cor azul-aço para iphone 15/16/17, macbook pro, ipad pro, samsung galaxy, xiaomi, carplay, android auto samsung pd 3.2/3.1 7928  [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/4VeGbg0ezX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="cabo usb-c anker 240w (tipo c) pd 3.2/3.1 turbo carga super rápida trançado reciclado 0,9m cor azul-aço para iphone 15/16/17, macbook pro, ipad pro, samsung galaxy, xiaomi, carplay, android auto samsung pd 3.2/3.1 7928  [loja oficial]">
  <img src="arts/2026111113-MLB5698260460.jpg" alt="Cabo USB-C Anker 240W (Tipo C) PD 3.2/3.1 Turbo Carga Super Rápida Trançado Reciclado 0,9m Cor Azul-aço para iPhone 15/16/17, MacBook Pro, iPad Pro, Samsung Galaxy, Xiaomi, CarPlay, Android Auto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_731545-MLA91830889589_092025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular</span><span class="cod">Oferta #7928</span>
  <h3>Cabo USB-C Anker 240W (Tipo C) PD 3.2/3.1 Turbo Carga Super Rápida Trançado Reciclado 0,9m Cor Azul-aço para iPhone 15/16/17, MacBook Pro, iPad Pro, Samsung Galaxy, Xiaomi, CarPlay, Android Auto</h3><p class="de"><s>R$ 189,00</s> <b class="off">67% OFF</b></p>
  <p class="preco">R$ 62,08 <small></small></p>
  <p class="vend"> [Loja oficial] · ★ 4.9</p>
  <p class="data">Conferido em 11/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1F4TFyt" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="geonav cabo de silicone usb-a para usb-c, carregamento até 38w, 1,5m geonav até 38w, afd6 amazon.com.br">
+ <a class="btn" href="https://meli.la/1F4TFyt" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="geonav cabo de silicone usb-a para usb-c, carregamento até 38w, 1,5m geonav até 38w, afd6 amazon.com.br">
  <img src="arts/2026111113-AMZ-B0DH78TFRY.jpg" alt="Geonav Cabo de Silicone USB-A para USB-C, carregamento até 38W, 1,5m" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/613ug8LsfgL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #AFD6</span>
  <h3>Geonav Cabo de Silicone USB-A para USB-C, carregamento até 38W, 1,5m</h3><p class="de"><s>R$ 44,90</s> <b class="off">60% OFF</b></p>
  <p class="preco">R$ 17,78 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (81 avaliações)</p>
  <p class="data">Conferido em 11/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DH78TFRY?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="kit carregador para iphone fonte + cabo 20w pd turbo rapido tipo c lightning kit iphone fonte + cab 34c0 vendido por zsz_brasil">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DH78TFRY?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="kit carregador para iphone fonte + cabo 20w pd turbo rapido tipo c lightning kit iphone fonte + cab 34c0 vendido por zsz_brasil">
  <img src="arts/2026111113-SHP-22997182283.jpg" alt="Kit Carregador Para iPhone Fonte + Cabo 20w PD Turbo Rapido Tipo C Lightning" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-lsvdp1mfzd44da'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #34C0</span>
  <h3>Kit Carregador Para iPhone Fonte + Cabo 20w PD Turbo Rapido Tipo C Lightning</h3><p class="de"><s>R$ 50,00</s> <b class="off">88% OFF</b></p>
  <p class="preco">R$ 9,49 <small></small></p>
  <p class="vend">Vendido por ZSZ_brasil · ★ 4.8 (4mil+ vendas)</p>
  <p class="data">Conferido em 11/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/AUvTkfnQTY" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="1200n.m chave de impacto 3 em 1 + 2 bateria sem fio dobevi 1200n.m chave impacto 3 em 3bc3 vendido por dobevi [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/AUvTkfnQTY" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="1200n.m chave de impacto 3 em 1 + 2 bateria sem fio dobevi 1200n.m chave impacto 3 em 3bc3 vendido por dobevi [loja oficial]">
  <img src="arts/2026111108-MLB3804456483.jpg" alt="1200n.m Chave De Impacto 3 Em 1 + 2 Bateria Sem Fio Dobevi" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_734856-MLB92725544483_092025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas</span><span class="cod">Oferta #3BC3</span>
  <h3>1200n.m Chave De Impacto 3 Em 1 + 2 Bateria Sem Fio Dobevi</h3><p class="de"><s>R$ 1.200,52</s> <b class="off">62% OFF</b></p>
  <p class="preco">R$ 454,00 <small></small></p>
  <p class="vend">Vendido por DOBEVI [Loja oficial] · ★ 4.8</p>
  <p class="data">Conferido em 11/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2BRsHG7" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="bosch kit de pontas e brocas x-line 33 pçs bosch pontas brocas x-li 53d6 amazon.com.br">
+ <a class="btn" href="https://meli.la/2BRsHG7" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="bosch kit de pontas e brocas x-line 33 pçs bosch pontas brocas x-li 53d6 amazon.com.br">
  <img src="arts/2026111108-AMZ-B07CTN7X2Y.jpg" alt="Bosch Kit De Pontas E Brocas X-Line 33 Pçs" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61dkAeB2rXL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #53D6</span>
  <h3>Bosch Kit De Pontas E Brocas X-Line 33 Pçs</h3><p class="de"><s>R$ 169,90</s> <b class="off">65% OFF</b></p>
  <p class="preco">R$ 59,77 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (22,1 mil avaliações)</p>
  <p class="data">Conferido em 11/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B07CTN7X2Y?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="parafusadeira furadeira de impacto sem fio 21v bivolt 110/220v kit maleta com 2 baterias 28 peças parafusadeira bivolt 110/220v 0cc2 vendido por terra celestial">
+ <a class="btn" href="https://www.amazon.com.br/dp/B07CTN7X2Y?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="parafusadeira furadeira de impacto sem fio 21v bivolt 110/220v kit maleta com 2 baterias 28 peças parafusadeira bivolt 110/220v 0cc2 vendido por terra celestial">
  <img src="arts/2026111108-SHP-23197416358.jpg" alt="Parafusadeira Furadeira de Impacto Sem Fio 21V Bivolt 110/220V Kit Maleta com 2 Baterias 28 Peças" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820m8-mlczxisdlt6sf6'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #0CC2</span>
  <h3>Parafusadeira Furadeira de Impacto Sem Fio 21V Bivolt 110/220V Kit Maleta com 2 Baterias 28 Peças</h3><p class="de"><s>R$ 300,00</s> <b class="off">73% OFF</b></p>
  <p class="preco">R$ 115,98 <small></small></p>
  <p class="vend">Vendido por Terra Celestial · ★ 4.8 (100mil+ vendas)</p>
  <p class="data">Conferido em 11/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/70LbaDwLFr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="kit mouse teclado bluetooth aportex sem fio slim ergonomico prateado kit bluetooth aportex 18fd aportex [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/70LbaDwLFr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="kit mouse teclado bluetooth aportex sem fio slim ergonomico prateado kit bluetooth aportex 18fd aportex [loja oficial]">
  <img src="arts/2026110922-MLB62981045.jpg" alt="Kit Mouse Teclado Bluetooth Aportex Sem Fio Slim Ergonomico Prateado" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_667440-MLA120426709017_102026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática · 2ª linha</span><span class="cod">Oferta #18FD</span>
  <h3>Kit Mouse Teclado Bluetooth Aportex Sem Fio Slim Ergonomico Prateado</h3><p class="de"><s>R$ 119,90</s> <b class="off">41% OFF</b></p>
  <p class="preco">R$ 69,59 <small></small></p>
  <p class="vend">Aportex [Loja oficial] · ★ 4.8 | +500 vendidos</p>
  <p class="data">Conferido em 09/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1shtUST" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-busca="kingston pendrive exodia m 64gb usb kingston pendrive exodia m 2d37 amazon.com.br">
+ <a class="btn" href="https://meli.la/1shtUST" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Amazon" data-selo="0" data-busca="kingston pendrive exodia m 64gb usb kingston pendrive exodia m 2d37 amazon.com.br">
  <img src="arts/2026110922-AMZ-B0B1JNDZ5J.jpg" alt="Kingston Pendrive Exodia M 64GB USB" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51ehky+6nyL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Informática</span><span class="cod">Oferta #2D37</span>
  <h3>Kingston Pendrive Exodia M 64GB USB</h3><p class="de"><s>R$ 86,98</s> <b class="off">39% OFF</b></p>
  <p class="preco">R$ 52,91 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (27mil avaliações)</p>
  <p class="data">Conferido em 09/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0B1JNDZ5J?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="basike teclado mecânico modo triplo，rgb switches vermelhos teclado mecânico design ergonômico com vi basike mecânico modo trip 9fd1 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0B1JNDZ5J?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="basike teclado mecânico modo triplo，rgb switches vermelhos teclado mecânico design ergonômico com vi basike mecânico modo trip 9fd1 shopee">
  <img src="arts/2026110922-SHP-55856646958.jpg" alt="Basike Teclado Mecânico Modo triplo，RGB Switches vermelhos Teclado mecânico Design ergonômico Com vi" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820ma-mnxrx1gvgsn6b6'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #9FD1</span>
  <h3>Basike Teclado Mecânico Modo triplo，RGB Switches vermelhos Teclado mecânico Design ergonômico Com vi</h3><p class="de"><s>R$ 837,98</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 418,99 <small></small></p>
  <p class="vend">Shopee · ★ 1mil+ vendas</p>
  <p class="data">Conferido em 09/11/2026 22:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/1BNaTUjjxN" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="xiaomi redmi 15c 256gb 16gb ram azul dual sim xiaomi redmi 15c b478 ">
+ <a class="btn" href="https://s.shopee.com.br/1BNaTUjjxN" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="xiaomi redmi 15c 256gb 16gb ram azul dual sim xiaomi redmi 15c b478 ">
  <img src="arts/2026110920-MLB75078829.jpg" alt="Xiaomi Redmi 15c 256gb 16gb RAM azul Dual Sim" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_654185-MLA113027284516_072026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular · 2ª linha</span><span class="cod">Oferta #B478</span>
  <h3>Xiaomi Redmi 15c 256gb 16gb RAM azul Dual Sim</h3><p class="de"><s>R$ 1.942,71</s> <b class="off">41% OFF</b></p>
  <p class="preco">R$ 1.136 <small>no Pix</small></p>
  <p class="vend"> · ★ 4.6 | +1000 vendidos</p>
  <p class="data">Conferido em 09/11/2026 20:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1NLiRxX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="speaker philco extreme pbs35 flash light bluetooth philco extreme pbs35 0884 easytech [loja oficial]">
+ <a class="btn" href="https://meli.la/1NLiRxX" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="speaker philco extreme pbs35 flash light bluetooth philco extreme pbs35 0884 easytech [loja oficial]">
  <img src="arts/2026110919-MLB4297867815.jpg" alt="Speaker Philco Extreme Pbs35 Flash Light Bluetooth" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_810090-MLB97823782027_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos · 2ª linha</span><span class="cod">Oferta #0884</span>
  <h3>Speaker Philco Extreme Pbs35 Flash Light Bluetooth</h3><p class="de"><s>R$ 499,00</s> <b class="off">61% OFF</b></p>
  <p class="preco">R$ 193,07 <small></small></p>
  <p class="vend">EasyTech [Loja oficial] · ★ 5.0 | +25 vendidos</p>
  <p class="data">Conferido em 09/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1DbDi4d" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="jbl fone de ouvido sem fio wave buds 2 jbl wave buds 2 3b7d amazon.com.br">
+ <a class="btn" href="https://meli.la/1DbDi4d" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="jbl fone de ouvido sem fio wave buds 2 jbl wave buds 2 3b7d amazon.com.br">
  <img src="arts/2026110919-AMZ-B0DHLBLFXQ.jpg" alt="JBL Fone de Ouvido Sem Fio Wave Buds 2" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/31AilnfwkbL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #3B7D</span>
  <h3>JBL Fone de Ouvido Sem Fio Wave Buds 2</h3><p class="de"><s>R$ 466,66</s> <b class="off">51% OFF</b></p>
  <p class="preco">R$ 226,80 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.6 (8,6mil avaliações)</p>
  <p class="data">Conferido em 09/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DHLBLFXQ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="h&#x27;maston h007 caixinha de som bluetooth caixa de som bluetooth portátil caixa som caixa bluetooth ca h&#x27;maston h007 3bb6 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DHLBLFXQ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="h&#x27;maston h007 caixinha de som bluetooth caixa de som bluetooth portátil caixa som caixa bluetooth ca h&#x27;maston h007 3bb6 shopee">
  <img src="arts/2026110919-SHP-58262951319.jpg" alt="H&#x27;Maston H007 Caixinha De Som Bluetooth Caixa De Som Bluetooth Portátil Caixa Som Caixa Bluetooth Ca" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820lk-mrv2c7fd84xw31'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #3BB6</span>
  <h3>H&#x27;Maston H007 Caixinha De Som Bluetooth Caixa De Som Bluetooth Portátil Caixa Som Caixa Bluetooth Ca</h3><p class="de"><s>R$ 89,27</s> <b class="off">44% OFF</b></p>
  <p class="preco">R$ 49,99 <small></small></p>
  <p class="vend">Shopee · ★ 274 vendas</p>
  <p class="data">Conferido em 09/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/5LD9RG8UMK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-busca="hd ssd kingston a400 120gb sata 3 sa400s37/120g c/ nota nf-e cor preto kingston ssd a400 5d99 ">
+ <a class="btn" href="https://s.shopee.com.br/5LD9RG8UMK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Mercado Livre" data-selo="0" data-busca="hd ssd kingston a400 120gb sata 3 sa400s37/120g c/ nota nf-e cor preto kingston ssd a400 5d99 ">
  <img src="arts/2026110916-MLB23722991.jpg" alt="Hd Ssd Kingston A400 120gb Sata 3 Sa400s37/120g C/ Nota Nf-e Cor Preto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_844098-MLA99936983247_112025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Informática · 1ª linha</span><span class="cod">Oferta #5D99</span>
  <h3>Hd Ssd Kingston A400 120gb Sata 3 Sa400s37/120g C/ Nota Nf-e Cor Preto</h3><p class="de"><s>R$ 499,90</s> <b class="off">50% OFF</b></p>
  <p class="preco">R$ 245,00 <small></small></p>
  <p class="vend"> · ★ 4.8 | +5mil vendidos</p>
  <p class="data">Conferido em 09/11/2026 16:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/33LPhEH" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-busca="h‘maston ms17 mouse sem fio para notebook mouse gamer sem fio mouse sem fio recarregável mouse gamer h‘maston ms17 ac82 shopee">
+ <a class="btn" href="https://meli.la/33LPhEH" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Informática" data-loja="Shopee" data-selo="0" data-busca="h‘maston ms17 mouse sem fio para notebook mouse gamer sem fio mouse sem fio recarregável mouse gamer h‘maston ms17 ac82 shopee">
  <img src="arts/2026110916-SHP-23999485284.jpg" alt="H‘MASTON MS17 Mouse Sem Fio Para Notebook Mouse Gamer Sem Fio Mouse Sem Fio Recarregável Mouse Gamer" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820lm-muxbuspwudj65e'">
  <div class="info"><span class="tag">Shopee · Informática</span><span class="cod">Oferta #AC82</span>
  <h3>H‘MASTON MS17 Mouse Sem Fio Para Notebook Mouse Gamer Sem Fio Mouse Sem Fio Recarregável Mouse Gamer</h3><p class="de"><s>R$ 51,48</s> <b class="off">67% OFF</b></p>
  <p class="preco">R$ 16,99 <small></small></p>
  <p class="vend">Shopee · ★ 957 vendas</p>
  <p class="data">Conferido em 09/11/2026 16:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/2qVoSXldUB" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-busca="carregador portátil 20000mah com carregamento rápido geonav cinza geonav portátil 20000mah e0f6 geonav [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/2qVoSXldUB" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Mercado Livre" data-selo="0" data-busca="carregador portátil 20000mah com carregamento rápido geonav cinza geonav portátil 20000mah e0f6 geonav [loja oficial]">
  <img src="arts/2026110913-MLB67407121.jpg" alt="Carregador Portátil 20000mah Com Carregamento Rápido Geonav Cinza" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_872106-MLA109028533324_032026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Acessórios de celular · 2ª linha</span><span class="cod">Oferta #E0F6</span>
  <h3>Carregador Portátil 20000mah Com Carregamento Rápido Geonav Cinza</h3><p class="de"><s>R$ 299,00</s> <b class="off">49% OFF</b></p>
  <p class="preco">R$ 150,00 <small></small></p>
  <p class="vend">Geonav [Loja oficial] · ★ 4.9 | +5mil vendidos</p>
  <p class="data">Conferido em 09/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2dJRDCu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-busca="carregador portátil power bank 20000mah 3x usb-c super rápido carregador 3x 6adf amazon.com.br">
+ <a class="btn" href="https://meli.la/2dJRDCu" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Amazon" data-selo="0" data-busca="carregador portátil power bank 20000mah 3x usb-c super rápido carregador 3x 6adf amazon.com.br">
  <img src="arts/2026110913-AMZ-B0D8RJ99Z1.jpg" alt="Carregador Portátil Power Bank 20000mAh 3x USB-C Super Rápido" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/41sv463IV4L._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Acessórios de celular</span><span class="cod">Oferta #6ADF</span>
  <h3>Carregador Portátil Power Bank 20000mAh 3x USB-C Super Rápido</h3><p class="de"><s>R$ 449,00</s> <b class="off">47% OFF</b></p>
  <p class="preco">R$ 236,55 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (1,4mil avaliações)</p>
  <p class="data">Conferido em 09/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0D8RJ99Z1?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-busca="carregador portátil powerbank para iphone 11/12 / 13 /14pro max mini bateria externa portátil powerb carregador iphone 11/12 9f82 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0D8RJ99Z1?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Acessórios de celular" data-loja="Shopee" data-selo="0" data-busca="carregador portátil powerbank para iphone 11/12 / 13 /14pro max mini bateria externa portátil powerb carregador iphone 11/12 9f82 shopee">
  <img src="arts/2026110913-SHP-20397158971.jpg" alt="Carregador Portátil Powerbank Para iPhone 11/12 / 13 /14Pro Max Mini bateria externa Portátil Powerb" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7qukw-lj8hll20laglf5'">
  <div class="info"><span class="tag">Shopee · Acessórios de celular</span><span class="cod">Oferta #9F82</span>
  <h3>Carregador Portátil Powerbank Para iPhone 11/12 / 13 /14Pro Max Mini bateria externa Portátil Powerb</h3><p class="de"><s>R$ 152,58</s> <b class="off">81% OFF</b></p>
  <p class="preco">R$ 28,99 <small></small></p>
  <p class="vend">Shopee · ★ 1mil+ vendas</p>
  <p class="data">Conferido em 09/11/2026 13:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/8Kql0jU2ZU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="celular realme c75 4g 256gb 8gb ram tela 90hz realme c75 af7d movacel [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/8Kql0jU2ZU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="celular realme c75 4g 256gb 8gb ram tela 90hz realme c75 af7d movacel [loja oficial]">
  <img src="arts/2026110912-MLB66447363.jpg" alt="Celular Realme C75 4g 256gb 8gb Ram Tela 90hz" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_982595-MLA107808563544_032026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular · 2ª linha</span><span class="cod">Oferta #AF7D</span>
  <h3>Celular Realme C75 4g 256gb 8gb Ram Tela 90hz</h3><p class="de"><s>R$ 3.299,99</s> <b class="off">42% OFF</b></p>
  <p class="preco">R$ 1.899 <small></small></p>
  <p class="vend">Movacel [Loja oficial] · ★ 4.7 | +25 vendidos</p>
  <p class="data">Conferido em 09/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2RGpKaZ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="celular samsung galaxy a57 5g 128gb 8gb ram câmera 50mp samsung galaxy a57 1b24 amazon.com.br">
+ <a class="btn" href="https://meli.la/2RGpKaZ" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="celular samsung galaxy a57 5g 128gb 8gb ram câmera 50mp samsung galaxy a57 1b24 amazon.com.br">
  <img src="arts/2026110912-AMZ-B0GVSVS9WH.jpg" alt="Celular Samsung Galaxy A57 5G 128GB 8GB RAM Câmera 50MP" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/51z6hTsLwNL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #1B24</span>
  <h3>Celular Samsung Galaxy A57 5G 128GB 8GB RAM Câmera 50MP</h3><p class="de"><s>R$ 3.599</s> <b class="off">48% OFF</b></p>
  <p class="preco">R$ 1.856,80 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.8 (883 avaliações)</p>
  <p class="data">Conferido em 09/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GVSVS9WH?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="smartphone motorola moto g06 - 128gb 4gb ram + 8gb ram boost, e camera 50mp com ai bateria de 5200 m motorola moto g06 deea shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GVSVS9WH?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="smartphone motorola moto g06 - 128gb 4gb ram + 8gb ram boost, e camera 50mp com ai bateria de 5200 m motorola moto g06 deea shopee">
  <img src="arts/2026110912-SHP-22494451872.jpg" alt="Smartphone Motorola Moto g06 - 128GB 4GB RAM + 8GB Ram Boost, e Camera 50MP com AI Bateria de 5200 m" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-821g3-mgzq4fbjcs20e1'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #DEEA</span>
- <h3>Smartphone Motorola Moto g06 - 128GB 4GB RAM + 8GB Ram Boost, e Camera 50MP com AI Bateria de 5200 m</h3><p class="de"><s>R$ 887,78</s> <b class="off">0% OFF</b></p>
+ <h3>Smartphone Motorola Moto g06 - 128GB 4GB RAM + 8GB Ram Boost, e Camera 50MP com AI Bateria de 5200 m</h3><p class="de"></p>
  <p class="preco">R$ 887,78 <small></small></p>
  <p class="vend">Shopee · ★ 10mil+ vendas</p>
  <p class="data">Conferido em 09/11/2026 12:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/3qOLeR7ygr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="lixadeira esmerilhadeira c/ regulagem velocidade 900w bosch azul 60hz bosch azul 60hz 0969 bosch por ismafer ferramentas [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/3qOLeR7ygr" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="lixadeira esmerilhadeira c/ regulagem velocidade 900w bosch azul 60hz bosch azul 60hz 0969 bosch por ismafer ferramentas [loja oficial]">
  <img src="arts/2026110908-MLB70601092.jpg" alt="Lixadeira Esmerilhadeira C/ Regulagem Velocidade 900w Bosch Azul 60hz" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_868066-MLA112534190573_052026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas · 1ª linha</span><span class="cod">Oferta #0969</span>
  <h3>Lixadeira Esmerilhadeira C/ Regulagem Velocidade 900w Bosch Azul 60hz</h3><p class="de"><s>R$ 1.229</s> <b class="off">55% OFF</b></p>
  <p class="preco">R$ 552,80 <small>no Pix</small></p>
  <p class="vend">BOSCH por Ismafer Ferramentas [Loja oficial] · ★ 4.9 | +500 vendidos</p>
  <p class="data">Conferido em 09/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2HDSisC" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-busca="vonder parafusadeira/furadeira a bateria pfv 238 20v vonder parafusadeira/fura 8403 amazon.com.br">
+ <a class="btn" href="https://meli.la/2HDSisC" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Amazon" data-selo="0" data-busca="vonder parafusadeira/furadeira a bateria pfv 238 20v vonder parafusadeira/fura 8403 amazon.com.br">
  <img src="arts/2026110908-AMZ-B0DK9WK3ZQ.jpg" alt="Vonder Parafusadeira/Furadeira a Bateria PFV 238 20V" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/6137Taup2AL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Ferramentas</span><span class="cod">Oferta #8403</span>
  <h3>Vonder Parafusadeira/Furadeira a Bateria PFV 238 20V</h3><p class="de"><s>R$ 475,22</s> <b class="off">57% OFF</b></p>
  <p class="preco">R$ 206,06 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (726 avaliações)</p>
  <p class="data">Conferido em 09/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0DK9WK3ZQ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="adaptador angular para parafusadeira 105°/90° graus profissional para furadeira e parafusadeira cant adaptador 105°/90° 9c33 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0DK9WK3ZQ?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="adaptador angular para parafusadeira 105°/90° graus profissional para furadeira e parafusadeira cant adaptador 105°/90° 9c33 shopee">
  <img src="arts/2026110908-SHP-41459006046.jpg" alt="adaptador angular para parafusadeira 105°/90° graus profissional Para Furadeira E Parafusadeira Cant" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-mda7cxmvmzhuff'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #9C33</span>
  <h3>adaptador angular para parafusadeira 105°/90° graus profissional Para Furadeira E Parafusadeira Cant</h3><p class="de"><s>R$ 56,63</s> <b class="off">70% OFF</b></p>
  <p class="preco">R$ 16,99 <small></small></p>
  <p class="vend">Shopee · ★ 2mil+ vendas</p>
  <p class="data">Conferido em 09/11/2026 08:30 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/4LKcFFHhYI" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-busca="celular samsung galaxy a17 5g com ia, 128gb, 4gb ram, câm de 50mp, tela de 6.7&#x27;, nfc, ip54 - preto samsung galaxy a17 aad1 123 comprou [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/4LKcFFHhYI" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Mercado Livre" data-selo="0" data-busca="celular samsung galaxy a17 5g com ia, 128gb, 4gb ram, câm de 50mp, tela de 6.7&#x27;, nfc, ip54 - preto samsung galaxy a17 aad1 123 comprou [loja oficial]">
  <img src="arts/2026110821-MLB63335606.jpg" alt="Celular Samsung Galaxy A17 5G Com IA, 128gb, 4gb Ram, Câm De 50mp, Tela De 6.7&#x27;, Nfc, Ip54 - Preto" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_864503-MLA118251143201_092026-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Celular · 1ª linha</span><span class="cod">Oferta #AAD1</span>
  <h3>Celular Samsung Galaxy A17 5G Com IA, 128gb, 4gb Ram, Câm De 50mp, Tela De 6.7&#x27;, Nfc, Ip54 - Preto</h3><p class="de"><s>R$ 1.855,71</s> <b class="off">43% OFF</b></p>
  <p class="preco">R$ 1.049 <small></small></p>
  <p class="vend">123 Comprou [Loja oficial] · ★ 4.8 | +50mil vendidos</p>
  <p class="data">Conferido em 08/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/2xnAZYU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-busca="smartphone motorola moto g77 5g 256gb 8gb ram motorola moto g77 167b amazon.com.br">
+ <a class="btn" href="https://meli.la/2xnAZYU" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Amazon" data-selo="0" data-busca="smartphone motorola moto g77 5g 256gb 8gb ram motorola moto g77 167b amazon.com.br">
  <img src="arts/2026110821-AMZ-B0GLSLLGZL.jpg" alt="Smartphone Motorola Moto G77 5G 256GB 8GB RAM" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61zXvb3EmiL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Celular</span><span class="cod">Oferta #167B</span>
  <h3>Smartphone Motorola Moto G77 5G 256GB 8GB RAM</h3><p class="de"><s>R$ 2.999</s> <b class="off">45% OFF</b></p>
  <p class="preco">R$ 1.642,55 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (111 avaliações)</p>
  <p class="data">Conferido em 08/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0GLSLLGZL?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-busca="celular galaxy a07 tela 6.7 128gb 4g 90hz câmera dupla 50mp verde samsung samsung galaxy a07 24b8 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0GLSLLGZL?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Celular" data-loja="Shopee" data-selo="0" data-busca="celular galaxy a07 tela 6.7 128gb 4g 90hz câmera dupla 50mp verde samsung samsung galaxy a07 24b8 shopee">
  <img src="arts/2026110821-SHP-58256288895.jpg" alt="Celular Galaxy A07 Tela 6.7 128GB 4G 90Hz Câmera Dupla 50MP Verde Samsung" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/sg-11134201-8262d-mlgak2egtblv97'">
  <div class="info"><span class="tag">Shopee · Celular</span><span class="cod">Oferta #24B8</span>
- <h3>Celular Galaxy A07 Tela 6.7 128GB 4G 90Hz Câmera Dupla 50MP Verde Samsung</h3><p class="de"><s>R$ 1.098,78</s> <b class="off">0% OFF</b></p>
+ <h3>Celular Galaxy A07 Tela 6.7 128GB 4G 90Hz Câmera Dupla 50MP Verde Samsung</h3><p class="de"></p>
  <p class="preco">R$ 1.098,78 <small></small></p>
  <p class="vend">Shopee · ★ 10mil+ vendas</p>
  <p class="data">Conferido em 08/11/2026 21:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/2qVoSaKERV" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-busca="caixa de som flip7 bluetooth prova d&#x27;água preta jbl bivolt jbl flip7 b324 jbl [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/2qVoSaKERV" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Mercado Livre" data-selo="0" data-busca="caixa de som flip7 bluetooth prova d&#x27;água preta jbl bivolt jbl flip7 b324 jbl [loja oficial]">
  <img src="arts/2026110819-MLB5410090002.jpg" alt="Caixa De Som Flip7 Bluetooth Prova D&#x27;água Preta Jbl Bivolt" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_822602-MLA84685618434_052025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Eletrônicos · 1ª linha</span><span class="cod">Oferta #B324</span>
  <h3>Caixa De Som Flip7 Bluetooth Prova D&#x27;água Preta Jbl Bivolt</h3><p class="de"><s>R$ 899,00</s> <b class="off">15% OFF</b></p>
  <p class="preco">R$ 755,82 <small></small></p>
  <p class="vend">JBL [Loja oficial] · ★ 4.9 | +5mil vendidos</p>
  <p class="data">Conferido em 08/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/24fbQad" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-busca="samsung galaxy watch8 smartwatch 40mm lte samsung galaxy watch8 e2f7 amazon.com.br">
+ <a class="btn" href="https://meli.la/24fbQad" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Amazon" data-selo="0" data-busca="samsung galaxy watch8 smartwatch 40mm lte samsung galaxy watch8 e2f7 amazon.com.br">
  <img src="arts/2026110819-AMZ-B0FDXB22BL.jpg" alt="Samsung Galaxy Watch8 Smartwatch 40mm LTE" loading="lazy" onerror="this.onerror=null;this.src='https://m.media-amazon.com/images/I/61zc3QnQvcL._AC_SL1000_.jpg'">
  <div class="info"><span class="tag">Amazon · Eletrônicos</span><span class="cod">Oferta #E2F7</span>
  <h3>Samsung Galaxy Watch8 Smartwatch 40mm LTE</h3><p class="de"><s>R$ 3.299</s> <b class="off">55% OFF</b></p>
  <p class="preco">R$ 1.479 <small></small></p>
  <p class="vend">Amazon.com.br · ★ 4.7 (303 avaliações)</p>
  <p class="data">Conferido em 08/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://www.amazon.com.br/dp/B0FDXB22BL?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-busca="h&#x27;maston f921 fone condução óssea fone para corrida fone de ouvido para corrida fone de ouvido espor h&#x27;maston f921 cab7 shopee">
+ <a class="btn" href="https://www.amazon.com.br/dp/B0FDXB22BL?tag=fabpagegyn-20" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Eletrônicos" data-loja="Shopee" data-selo="0" data-busca="h&#x27;maston f921 fone condução óssea fone para corrida fone de ouvido para corrida fone de ouvido espor h&#x27;maston f921 cab7 shopee">
  <img src="arts/2026110819-SHP-58216872655.jpg" alt="H&#x27;MASTON F921 Fone Condução Óssea Fone Para Corrida Fone De Ouvido Para Corrida Fone De Ouvido Espor" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-820md-msfchkqc38xw4f'">
  <div class="info"><span class="tag">Shopee · Eletrônicos</span><span class="cod">Oferta #CAB7</span>
  <h3>H&#x27;MASTON F921 Fone Condução Óssea Fone Para Corrida Fone De Ouvido Para Corrida Fone De Ouvido Espor</h3><p class="de"><s>R$ 119,42</s> <b class="off">64% OFF</b></p>
  <p class="preco">R$ 42,99 <small></small></p>
  <p class="vend">Shopee · ★ 446 vendas</p>
  <p class="data">Conferido em 08/11/2026 19:00 · link de afiliado</p>
- <a class="btn" href="https://s.shopee.com.br/gRJsfZfE0" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-busca="furadeira de impacto einhell tc-id 1000 e kit frequência 60 hz furadeira impacto einhell tc a35c einhell por kanit [loja oficial]">
+ <a class="btn" href="https://s.shopee.com.br/gRJsfZfE0" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Mercado Livre" data-selo="0" data-busca="furadeira de impacto einhell tc-id 1000 e kit frequência 60 hz furadeira impacto einhell tc a35c einhell por kanit [loja oficial]">
  <img src="arts/2026110810-MLB18217889.jpg" alt="Furadeira De Impacto Einhell Tc-id 1000 E Kit Frequência 60 Hz" loading="lazy" onerror="this.onerror=null;this.src='https://http2.mlstatic.com/D_NQ_NP_2X_940499-MLA100186033037_122025-F.webp'">
  <div class="info"><span class="tag">Mercado Livre · Ferramentas · 1ª linha</span><span class="cod">Oferta #A35C</span>
  <h3>Furadeira De Impacto Einhell Tc-id 1000 E Kit Frequência 60 Hz</h3><p class="de"><s>R$ 797,50</s> <b class="off">66% OFF</b></p>
  <p class="preco">R$ 270,75 <small>no Pix</small></p>
  <p class="vend">EINHELL por Kanit [Loja oficial] · ★ 4.9 | +500 vendidos</p>
  <p class="data">Conferido em 08/11/2026 10:00 · link de afiliado</p>
- <a class="btn" href="https://meli.la/1UGSPoK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-busca="chave universal chaves catraca de aço cromadas chave de boca jogo de chave ferramenta de parafuso ti chave universal chaves c 5e4a shopee">
+ <a class="btn" href="https://meli.la/1UGSPoK" target="_blank" rel="noopener sponsored">Ver anúncio</a></div></article><article class="card" data-cat="Ferramentas" data-loja="Shopee" data-selo="0" data-busca="chave universal chaves catraca de aço cromadas chave de boca jogo de chave ferramenta de parafuso ti chave universal chaves c 5e4a shopee">
  <img src="arts/2026110810-SHP-22697014916.jpg" alt="Chave universal chaves catraca de aço cromadas chave de boca jogo de chave Ferramenta de parafuso ti" loading="lazy" onerror="this.onerror=null;this.src='https://down-br.img.susercontent.com/file/br-11134207-7r98o-lks6wjv3qs8j29'">
  <div class="info"><span class="tag">Shopee · Ferramentas</span><span class="cod">Oferta #5E4A</span>
  <h3>Chave universal chaves catraca de aço cromadas chave de boca jogo de chave Ferramenta de parafuso ti</h3><p class="de"><s>R$ 88,52</s> <b class="off">73% OFF</b></p>
@@ -775,9 +790,12 @@ footer{text-align:center;font-size:.8rem;opacity:.8;padding:24px 16px 40px;max-w
 <footer>Links de afiliado: podem gerar comissão para a eFe Informática, sem custo extra para você.
 Preços, estoque e condições podem mudar a qualquer momento — confira tudo no anúncio antes de comprar.<br>
 <a href="https://www.instagram.com/efeinformatica/">@efeinformatica</a></footer>
-<script>let F='*',L='*';const q=document.getElementById('q');
-function ap(){const t=q.value.trim().toLowerCase().replace('#','');let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=(F=='*'||c.dataset.cat==F)&&(L=='*'||c.dataset.loja==L)&&(!t||c.dataset.busca.replace(/#/g,'').includes(t));c.style.display=ok?'':'none';if(ok)n++});document.getElementById('vazio').style.display=n?'none':'block'}
+<script>let F='*',L='*',S=0;const q=document.getElementById('q');
+function ap(){const t=q.value.trim().toLowerCase().replace('#','');let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=(F=='*'||c.dataset.cat==F)&&(L=='*'||c.dataset.loja==L)&&(!S||c.dataset.selo=='1')&&(!t||c.dataset.busca.replace(/#/g,'').includes(t));c.style.display=ok?'':'none';if(ok)n++});document.getElementById('vazio').style.display=n?'none':'block'}
 document.querySelectorAll('#fc button').forEach(b=>b.onclick=()=>{F=b.dataset.f;document.querySelectorAll('#fc button').forEach(x=>x.classList.toggle('on',x===b));ap()});
 document.querySelectorAll('#fl button').forEach(b=>b.onclick=()=>{L=b.dataset.l;document.querySelectorAll('#fl button').forEach(x=>x.classList.toggle('on',x===b));ap()});
-q.oninput=ap;const h=decodeURIComponent(location.hash.slice(1));if(h){q.value=h;ap()}</script>
+document.querySelectorAll('#fs button').forEach(b=>b.onclick=()=>{S=S?0:1;b.classList.toggle('on',!!S);ap()});
+q.oninput=ap;const h=decodeURIComponent(location.hash.slice(1));if(h){q.value=h;ap()}
+const ct=document.getElementById('cont');if(ct&&ct.dataset.dia){const alvo=new Date(ct.dataset.dia+'T00:00:00-03:00').getTime();const z=n=>String(n).padStart(2,'0');
+const tk=()=>{let s=Math.floor((alvo-Date.now())/1000);if(s<=0){ct.hidden=true;return}ct.hidden=false;document.getElementById('cd').textContent=Math.floor(s/86400);document.getElementById('ch').textContent=z(Math.floor(s%86400/3600));document.getElementById('cm').textContent=z(Math.floor(s%3600/60));document.getElementById('cs').textContent=z(s%60)};tk();setInterval(tk,1000)}</script>
 <script async src="https://sistema.efesystem.com.br/radar/t.js"></script></body></html>
